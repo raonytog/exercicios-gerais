@@ -2,6 +2,6 @@
 
 int main () {
     //teste
-    printf("Teste! C:)
+    printf("Teste! C:);
     return 0;
 }
