@@ -29,7 +29,6 @@ void PreencheVetor(int tam, int vet[tam]) {
 }
 
 int SomaElementosPares(int* vet, int numElementos) {
-    int i = 0;
     numElementos--;
     if (numElementos == -1) {
         return 0;
