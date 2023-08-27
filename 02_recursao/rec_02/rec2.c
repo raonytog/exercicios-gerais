@@ -30,13 +30,7 @@ void PreencheVetor(int tam, int vet[tam]) {
 
 int SomaElementosPares(int* vet, int numElementos) {
     numElementos--;
-    if (numElementos == -1) {
-        return 0;
-
-    } else if (vet[numElementos]%2 == 0) {
-        return vet[numElementos] + SomaElementosPares(vet, numElementos);
-    } else {
-        return SomaElementosPares(vet, numElementos);
-    }
-
+    if (numElementos == -1) return 0;
+    if (vet[numElementos]%2 == 0) return vet[numElementos] + SomaElementosPares(vet, numElementos);
+    return SomaElementosPares(vet, numElementos);
 }
