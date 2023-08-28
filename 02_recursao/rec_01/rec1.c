@@ -18,15 +18,13 @@ int main () {
 }
 
 void ImprimeInvertido(char* string) {
-
-    if (string[0] == '\0') {
-        return;
-    }
+    if (string[0] == '\0') return;
 
     int i = 0;
     while(string[i] != '\0') {
         i++;
     }
+    
     printf("%c", string[i-1]);
     string[i-1] = '\0';
     ImprimeInvertido(string);
