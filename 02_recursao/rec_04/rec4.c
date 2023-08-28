@@ -18,7 +18,6 @@ int main () {
         if (EhPalindromo(palavra, tam)) printf("SIM\n");
         else printf("NAO\n");
     }
-
     return 0;
 }
 
