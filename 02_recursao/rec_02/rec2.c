@@ -7,8 +7,8 @@ Raony Togneri
 
 #include <stdio.h>
 
-int SomaElementosPares(int* vet, int numElementos);
 void PreencheVetor(int tam, int vet[tam]);
+int SomaElementosPares(int* vet, int numElementos);
 
 int main () {
     int numVetores = 0, tam = 0;
