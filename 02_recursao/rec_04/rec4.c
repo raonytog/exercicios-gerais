@@ -24,8 +24,6 @@ int main () {
 
 int EhPalindromo(char *string, int tamanho) {
     if (tamanho <= 1) return 1;
-    
-    if (string[0] != string[tamanho-1]) return 0;
-
-    return EhPalindromo(string+1, tamanho-2);
+    if (string[0] != string[tamanho--]) return 0;
+    return EhPalindromo(string++, tamanho-2);
 }
