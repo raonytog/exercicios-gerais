@@ -1,6 +1,7 @@
 /*
-
-
+Programa para calcular a soma dos seus algarismos internos
+Raony Togneri
+28/07/2023
 */
 
 #include <stdio.h>
