@@ -9,4 +9,6 @@ int main () {
     if (verificaDataValida(dia1, mes1, ano1) && verificaDataValida(dia2, mes2, ano2)) {
 
     } else printf("A primeira e/ou segunda data(s) invalida(s)\n");
+    
+    return 0;
 }
