@@ -2,7 +2,9 @@
 #include "data.h"
 
 int verificaDataValida(int dia, int mes, int ano) {
-    if (dia > 0 && dia < 32 && mes > 0 && mes < 13) {
+    if (dia > 0 && dia < 32 && 
+        mes > 0 && mes < 13 &&
+        ano >= 0) {
         if (dia <= numeroDiasMes(mes, ano)) return 1;
     } 
     return 0;
@@ -83,19 +85,22 @@ int numeroDiasMes(int mes, int ano) {
 }
 
 int comparaData(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2) {
-    if (dia1 == dia2) {
+    if (dia1 == dia2 && mes1 == mes2 && ano1 == ano2) return 0;
+
+    if (ano1 == ano2) {
         if (mes1 == mes2) {
-            if (ano1 == ano2) return 0;
-            else if (ano1 > ano2) return 1;
+            if (dia1 > dia2) return 1;
+            else return -1;
+
+        } else {
+            if (mes1 > mes2) return 1;
             else return -1;
         }
-            
-        else if (mes1 > mes2) return 1;
+
+    } else {
+        if (ano1 > ano2) return 1;
         else return -1;
     }
-        
-    else if (dia1 > dia2) return 1;
-    return -1;
 }
 
 int calculaDiasAteMes(int mes, int ano) {
@@ -107,48 +112,35 @@ int calculaDiasAteMes(int mes, int ano) {
 }
 
 int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2) {
-    int mesAux = 0, diaAux = 0, diferenca = 0;
+    int anoAux = 0, mesAux = 0, diferenca = 0, i = 0, subtracaoDias = 0;
     if (dia1 == dia2 && mes1 == mes2 && ano1 == ano2) return 0;
-
-    if (dia1 == dia2 && mes1 == mes2 && ano1 != ano2) {
-        if (verificaBissexto(ano2)) return 366;
-        return 365;
+    
+    // organiza o ano do menor pro maior
+    if (ano1 > ano2) {
+        anoAux = ano2;
+        ano2 = ano1;
+        ano1 = anoAux;
     }
 
-    if (ano1 == ano2) {
-        if (mes1 > mes2) {
-            mesAux = mes2;
-            diaAux = dia2;
-
-            mes1 = mes2;
-            dia1 = dia2;
-
-            mes2 = mesAux;
-            dia2 = diaAux;
-        }
-
-    } else {
-        if (verificaBissexto(ano2)) diferenca += 366;
+    // retorna qnts dias no intervalo dos anos
+    for (i = ano1; i <  ano2; i++) {
+        if (verificaBissexto(i)) diferenca += 366;
         else diferenca += 365;
-
-        if (mes1 > mes2) {
-            mesAux = mes2;
-            diaAux = dia2;
-
-            mes1 = mes2;
-            dia1 = dia2;
-
-            mes2 = mesAux;
-            dia2 = diaAux;
-        }
+    }
+ 
+    // organiza o ano do menor pro maior
+    if (mes1 > mes2) {
+        mesAux = mes2;
+        mes2 = mes1;
+        mes1 = mesAux;
     }
 
-    for (int i = mes1; i < mes2; i++) {
+    // retorna a qtd de dias no intervalo dos meses
+    for (i = mes1; i < mes2; i++) {
         diferenca += numeroDiasMes(i, ano2);
     }
 
-    if (dia1 > dia2) diferenca += dia1 - dia2;
-    else if (dia2 > dia1) diferenca += dia2 - dia1;
-
+    // subtrai a diferenca dos dias para corrigir os dias dos meses
+    diferenca += dia2 - dia1;
     return diferenca;
 }
