@@ -10,7 +10,9 @@ int verificaDataValida(int dia, int mes, int ano) {
     return 0;
 }
 
-void imprimeData(int dia, int mes, int ano);
+void imprimeData(int dia, int mes, int ano) {
+    printf("%02d/%02d/%04d", dia, mes, ano);
+}
 
 void imprimeMesExtenso(int mes) {
     switch (mes) {
@@ -147,4 +149,14 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
     return diferenca;
 }
 
-void imprimeProximaData(int dia, int mes, int ano);
+void imprimeProximaData(int dia, int mes, int ano) {
+    if (dia+1 > numeroDiasMes(mes, ano)) {
+        dia = 1;
+        mes += 1;
+        if (mes > 12) {
+            ano++;
+            mes = 1;
+        }
+    }
+    imprimeData(dia, mes, ano);
+}
