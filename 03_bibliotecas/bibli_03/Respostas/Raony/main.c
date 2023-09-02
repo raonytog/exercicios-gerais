@@ -14,7 +14,7 @@ int main () {
         imprimeDataExtenso(dia2, mes2, ano2);
 
         if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1) {
-            printf("A primeira data eh mais antiga\n");
+            printf("A segunda data eh mais antiga\n");
         }
 
         if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 0) {
