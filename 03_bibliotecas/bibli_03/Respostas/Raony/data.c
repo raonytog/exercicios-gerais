@@ -1,14 +1,6 @@
 #include <stdio.h>
 #include "data.h"
 
-/**
- * @brief Verifica se uma data é válida.
- * 
- * @param dia Dia da data.
- * @param mes Mês da data.
- * @param ano Ano da data.
- * @return int Retorna 1 se a data é válida e 0 caso contrário.
- */
 int verificaDataValida(int dia, int mes, int ano) {
     if (dia > 0 && dia < 32 && mes > 0 && mes < 13) {
         if (dia <= numeroDiasMes(mes, ano)) return 1;
@@ -16,11 +8,6 @@ int verificaDataValida(int dia, int mes, int ano) {
     return 0;
 }
 
-/**
- * @brief Imprime o nome do mês por extenso.
- * 
- * @param mes Mês a ser impresso.
- */
 void imprimeMesExtenso(int mes) {
     switch (mes) {
     case 1:
@@ -73,36 +60,16 @@ void imprimeMesExtenso(int mes) {
     }
 }
 
-/**
- * @brief Imprime a data por extenso.
- * 
- * @param dia Dia da data.
- * @param mes Mês da data.
- * @param ano Ano da data.
- */
 void imprimeDataExtenso(int dia, int mes, int ano) {
-    printf("%d de ", dia);
+    printf("%02d de ", dia);
     imprimeMesExtenso(mes);
-    printf(" de %d\n", ano);
+    printf(" de %04d\n", ano);
 }
 
-/**
- * @brief Verifica se um ano é bissexto.
- * 
- * @param ano Ano a ser verificado.
- * @return int Retorna 1 se o ano é bissexto e 0 caso contrário.
- */
 int verificaBissexto(int ano) {
     return ((ano%4 == 0) && (ano%100 != 0)) || (ano%400 == 0);
 }
 
-/**
- * @brief Calcula o número de dias de um mês.
- * 
- * @param mes Mês a ser verificado.
- * @param ano Ano da data.
- * @return int Retorna o número de dias do mês.
- */
 int numeroDiasMes(int mes, int ano) {
     if (mes == 2) {
         if (verificaBissexto(ano)) return 29;
@@ -115,18 +82,6 @@ int numeroDiasMes(int mes, int ano) {
     else return 30;
 }
 
-/**
- * @brief Compara duas datas.
- * 
- * @param dia1 Dia da primeira data.
- * @param mes1 Mês da primeira data.
- * @param ano1 Ano da primeira data.
- * @param dia2 Dia da segunda data.
- * @param mes2 Mês da segunda data.
- * @param ano2 Ano da segunda data.
- * @return int Retorna 1 se a primeira data é maior que a segunda, -1 se a primeira data é menor que a segunda
- * e 0 se as datas são iguais.
- */
 int comparaData(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2) {
     if (dia1 == dia2) {
         if (mes1 == mes2) {
@@ -140,30 +95,60 @@ int comparaData(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2) {
     }
         
     else if (dia1 > dia2) return 1;
-    else return -1;
+    return -1;
 }
 
-/**
- * @brief Calcula o número de dias até o mês.
- * 
- * @param mes Mês a ser verificado.
- * @param ano Ano da data.
- * @return int Retorna o número de dias até o mês.
-*/
 int calculaDiasAteMes(int mes, int ano) {
+    int dia = 0;
+    for (int i = mes; i > 0; i--) {
+        dia += numeroDiasMes(i, ano);
+    }
+    return dia;
 }
 
+int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2) {
+    int mesAux = 0, diaAux = 0, diferenca = 0;
+    if (dia1 == dia2 && mes1 == mes2 && ano1 == ano2) return 0;
 
-/**
- * @brief Calcula a diferença em dias entre duas datas.
- * 
- * @param dia1 Dia da primeira data.
- * @param mes1 Mês da primeira data.
- * @param ano1 Ano da primeira data.
- * @param dia2 Dia da segunda data.
- * @param mes2 Mês da segunda data.
- * @param ano2 Ano da segunda data.
- * @return int Retorna o número de dias de diferença entre as datas.
- */
-int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2){
+    if (dia1 == dia2 && mes1 == mes2 && ano1 != ano2) {
+        if (verificaBissexto(ano2)) return 366;
+        return 365;
+    }
+
+    if (ano1 == ano2) {
+        if (mes1 > mes2) {
+            mesAux = mes2;
+            diaAux = dia2;
+
+            mes1 = mes2;
+            dia1 = dia2;
+
+            mes2 = mesAux;
+            dia2 = diaAux;
+        }
+
+    } else {
+        if (verificaBissexto(ano2)) diferenca += 366;
+        else diferenca += 365;
+
+        if (mes1 > mes2) {
+            mesAux = mes2;
+            diaAux = dia2;
+
+            mes1 = mes2;
+            dia1 = dia2;
+
+            mes2 = mesAux;
+            dia2 = diaAux;
+        }
+    }
+
+    for (int i = mes1; i < mes2; i++) {
+        diferenca += numeroDiasMes(i, ano2);
+    }
+
+    if (dia1 > dia2) diferenca += dia1 - dia2;
+    else if (dia2 > dia1) diferenca += dia2 - dia1;
+
+    return diferenca;
 }
