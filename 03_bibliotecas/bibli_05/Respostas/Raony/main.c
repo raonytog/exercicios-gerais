@@ -1,3 +1,9 @@
+/*
+Programa para manipular strings com a biblioteca criada
+Raony Togneri
+02/09/2023
+*/
+
 #include <stdio.h>
 #include "string_utils.h"
 #define MAX 1001

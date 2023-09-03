@@ -1,3 +1,9 @@
+/*
+Programa criado para manipular as datas com a biblioteca criada
+Raony Togneri
+02/09/2023
+*/
+
 #include <stdio.h>
 #include "data.h"
 

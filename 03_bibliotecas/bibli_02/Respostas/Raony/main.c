@@ -1,3 +1,9 @@
+/*
+Programa que manipula matrizes com a biblioteca criada
+Raony Togneri
+02/09/2023
+*/
+
 #include "matrix_utils.h"
 #include <stdio.h>
 

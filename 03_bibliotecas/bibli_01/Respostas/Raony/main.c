@@ -1,3 +1,9 @@
+/*
+Programa para calcular area e volume de uma esfera atravez das funcoes da biblioteca criada
+Raony Togneri
+30/08/2023
+*/
+
 #include <stdio.h>
 #include "esfera_utils.h"
 
