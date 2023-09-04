@@ -55,17 +55,17 @@ int main () {
                 break;
 
             case 3:
-                if (possible_matrix_sub(rows1, cols1, rows2,cols2)) {
+                if (possible_matrix_multiply(cols1, rows2)) {
                     int result[rows1][cols1];
                     matrix_multiply(rows1, cols1, matrix1, 
                                     rows2, cols2, matrix2, result);
-                    matrix_print(rows1, cols1, result);
+                    matrix_print(rows1, cols2, result);
                 } else printf("Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da segunda matriz\n");
                 break;
 
             case 4:
                 int scalar = 0, whichMatrix = 0;
-                scanf("%d %d\n", &scalar, &whichMatrix);
+                scanf("%d %d%*c", &scalar, &whichMatrix);
                 switch (whichMatrix) {
                     case 1:
                         scalar_multiply(rows1, cols1, matrix1, scalar);
@@ -82,11 +82,12 @@ int main () {
             case 5:
                 int result1[MAX][MAX];
                 transpose_matrix(rows1, cols1, matrix1, result1);
-                matrix_print(rows1, cols1, result1);
+                matrix_print(cols1, rows1, result1);
+                printf("\n");
 
                 int result2[MAX][MAX];
                 transpose_matrix(rows2, cols2, matrix2, result2);
-                matrix_print(rows2, cols2, result2);
+                matrix_print(cols2, rows2, result2);
                 break;
 
             case 6:
@@ -94,8 +95,8 @@ int main () {
                 break;
         }
 
-        printf("\n");
         if (flagExit) break;
+        printf("\n");
     }
     
     return 0;

@@ -23,7 +23,8 @@ void matrix_read(int rows, int cols, int matrix[rows][cols]) {
  */
 void matrix_print(int rows, int cols, int matrix[rows][cols]) {
     for (int i = 0; i < rows; i++) {
-        if (i != 0) printf("\n|");
+        if (i != 0) printf("\n");
+        printf("|");
         for (int j = 0; j < cols; j++) {
             printf("%d", matrix[i][j]);
             if (j != cols-1) printf(" ");
