@@ -5,7 +5,7 @@ float convert_celsius_to_kelvin(float temperature) {
 }
 
 float convert_celsius_to_fahrenheit(float temperature) {
-    return (temperature * 5.0/9) + 32;
+    return (temperature * 9.0/5) + 32;
 }
 
 float convert_kelvin_to_celsius(float temperature) {

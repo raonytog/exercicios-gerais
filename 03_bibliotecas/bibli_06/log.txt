@@ -105,7 +105,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta temperature_conversor / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/temperature_conversor/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta temperature_conversor / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/temperature_conversor/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
@@ -129,7 +129,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/5/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
@@ -150,13 +150,13 @@ Nome 0: Raony
  - Linkagens Corretas: 3 de 3 / Nota 10.00
  - Resultados Corretos main: 6 de 6 / Nota 10.00
  - Valgrinds Corretos main: 6 de 6 / Nota 10.00
- - Resultados Corretos temperature_conversor: 5 de 6 / Nota 8.33
+ - Resultados Corretos temperature_conversor: 6 de 6 / Nota 10.00
  - Valgrinds Corretos temperature_conversor: 6 de 6 / Nota 10.00
- - Resultados Corretos completo: 5 de 6 / Nota 8.33
+ - Resultados Corretos completo: 6 de 6 / Nota 10.00
  - Valgrinds Corretos completo: 6 de 6 / Nota 10.00
- - Soma das notas do Raony: 86.660
+ - Soma das notas do Raony: 90.000
  - Campos Considerados: 9
- - Média do Raony: 9.62
+ - Média do Raony: 10.00
 
 ----------------------------------------------------------------------------
 
