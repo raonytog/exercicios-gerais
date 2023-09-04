@@ -19,16 +19,16 @@ int main () {
         printf("Segunda data: ");
         imprimeDataExtenso(dia2, mes2, ano2);
 
-        if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1) {
-            printf("A segunda data eh mais antiga\n");
+        if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 1) {
+            printf("A primeira data eh mais antiga\n");
         }
 
         if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 0) {
             printf("As datas sao iguais\n");
         }
 
-        if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == 1) {
-            printf("A primeira data eh mais atual\n");
+        if (comparaData(dia1, mes1, ano1, dia2, mes2, ano2) == -1) {
+            printf("A segunda data eh mais antigal\n");
         }
 
         printf("A diferenca em dias entre as datas eh: %02d dias\n", 

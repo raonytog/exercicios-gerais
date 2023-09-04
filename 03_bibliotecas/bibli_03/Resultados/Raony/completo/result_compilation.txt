@@ -1,4 +1,4 @@
 Resultados/Raony/completo/data.c: In function ‘calculaDiferencaDias’:
-Resultados/Raony/completo/data.c:115:55: warning: unused variable ‘subtracaoDias’ [-Wunused-variable]
-  115 |     int anoAux = 0, mesAux = 0, diferenca = 0, i = 0, subtracaoDias = 0;
+Resultados/Raony/completo/data.c:113:55: warning: unused variable ‘subtracaoDias’ [-Wunused-variable]
+  113 |     int anoAux = 0, mesAux = 0, diferenca = 0, i = 0, subtracaoDias = 0;
       |                                                       ^~~~~~~~~~~~~

@@ -85,23 +85,21 @@ int numeroDiasMes(int mes, int ano) {
 }
 
 int comparaData(int dia1, int mes1, int ano1, int dia2, int mes2, int ano2) {
-    if (dia1 == dia2 && mes1 == mes2 && ano1 == ano2) return 0;
-
-    if (ano1 == ano2) {
-        if (mes1 == mes2) {
-            if (dia1 > dia2) return 1;
-            else return -1;
-
-        } else {
-            if (mes1 > mes2) return 1;
-            else return -1;
-        }
-
-    } else {
-        if (ano1 > ano2) return 1;
-        else return -1;
-    }
+    if (ano1 > ano2) return -1;
+    if (ano1 < ano2) return 1;
+    
+    // Se os anos forem iguais, compare os meses
+    if (mes1 > mes2) return -1;
+    if (mes1 < mes2) return 1;
+    
+    // Se os meses também forem iguais, compare os dias
+    if (dia1 > dia2) return -1;
+    if (dia1 < dia2) return 1;
+    
+    // Se chegamos até aqui, as datas são iguais
+    return 0;
 }
+
 
 int calculaDiasAteMes(int mes, int ano) {
     int dia = 0;
