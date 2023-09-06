@@ -13,9 +13,9 @@ Raony Togneri
 int main () {
     char string[MAX];
     char copiedString[MAX];
-    scanf("%[^\n]", string);
+    scanf("%[^\n]%*c", string);
 
-    int choosenOption = 0, flagExit = 0;
+    int choosenOption = 0;
     while (TRUE) {
         printf("1 - Tamanho da string\n");
         printf("2 - Copiar string\n");
@@ -50,15 +50,15 @@ int main () {
 
         case 5:
             string_reverse(string);
-            printf("String invertida: \n%s\n", string);
+            printf("String invertida: ");
+            printf("%s\n", string);
             break;
 
         case 6:
-            flagExit = 1;
+            return 0;
             break;
         }
 
-        if (flagExit) break;
         printf("\n");
     }
 

@@ -69,51 +69,51 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/3/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta string_utils / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/string_utils/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta string_utils / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/string_utils/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta string_utils / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/string_utils/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 1.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta string_utils / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/string_utils/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/2/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/3/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/4/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
 
 #######################################
 RESULTADOS FINAIS
@@ -124,15 +124,15 @@ Nome 0: Raony
  - Arquivos Corretos: 3 de 3 / Nota 10.00
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
- - Resultados Corretos main: 0 de 4 / Nota 0.00
+ - Resultados Corretos main: 4 de 4 / Nota 10.00
  - Valgrinds Corretos main: 4 de 4 / Nota 10.00
- - Resultados Corretos string_utils: 0 de 4 / Nota 0.00
- - Valgrinds Corretos string_utils: 3 de 4 / Nota 7.50
- - Resultados Corretos completo: 0 de 4 / Nota 0.00
+ - Resultados Corretos string_utils: 4 de 4 / Nota 10.00
+ - Valgrinds Corretos string_utils: 4 de 4 / Nota 10.00
+ - Resultados Corretos completo: 4 de 4 / Nota 10.00
  - Valgrinds Corretos completo: 4 de 4 / Nota 10.00
- - Soma das notas do Raony: 57.500
+ - Soma das notas do Raony: 90.000
  - Campos Considerados: 9
- - Média do Raony: 6.38
+ - Média do Raony: 10.00
 
 ----------------------------------------------------------------------------
 
