@@ -1,11 +1,9 @@
 #ifndef _JOGADOR_H
 #define _JOGADOR_H
 
-#include "tabuleiro.h"
-
-
 #define ID_JOGADOR_1 1
 #define ID_JOGADOR_2 2
+
 
 
 typedef struct{

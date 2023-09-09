@@ -1,2 +1,2 @@
 Test Case: Resultados/Raony/jogo/Casos/6
-Valgrind result: allocs: 0 frees: 0 errors: 0 contexts: 0
+Valgrind result: allocs: 2 frees: 0 errors: 1219366 contexts: 10

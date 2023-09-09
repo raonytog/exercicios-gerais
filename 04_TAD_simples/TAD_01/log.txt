@@ -1,4 +1,3 @@
-Ignorando o Valgrind
 Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
  - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
 #######################################
@@ -153,111 +152,111 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta jogada / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/jogada/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 21.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogada / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/jogada/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogada / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/jogada/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogada / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/jogada/Casos/4/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 1383125.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogada / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/jogada/Casos/5/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 21.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogada / Caso 6:
  - Arquivo de output gerado: Resultados/Raony/jogada/Casos/6/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 1363645.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogador / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/jogador/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogador / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/jogador/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogador / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/jogador/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogador / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/jogador/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogador / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/jogador/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogador / Caso 6:
  - Arquivo de output gerado: Resultados/Raony/jogador/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogo / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/jogo/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogo / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/jogo/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogo / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/jogo/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogo / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/jogo/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogo / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/jogo/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 1079055.
  - Resultado para o saida.txt: Incorreto!
  - Pasta jogo / Caso 6:
  - Arquivo de output gerado: Resultados/Raony/jogo/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 1219366.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 6:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta tabuleiro / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta tabuleiro / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta tabuleiro / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta tabuleiro / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/4/result_valgrind.txt.
@@ -269,31 +268,31 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Incorreto!
  - Pasta tabuleiro / Caso 6:
  - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/6/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 1898047.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2142132.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 5:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/5/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2263995.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 6:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2183986.
  - Resultado para o saida.txt: Incorreto!
 
 #######################################
@@ -306,14 +305,20 @@ Nome 0: Raony
  - Compilações Corretas: 30 de 30 / Nota 10.00
  - Linkagens Corretas: 6 de 6 / Nota 10.00
  - Resultados Corretos jogada: 0 de 6 / Nota 0.00
+ - Valgrinds Corretos jogada: 2 de 6 / Nota 3.33
  - Resultados Corretos jogador: 0 de 6 / Nota 0.00
+ - Valgrinds Corretos jogador: 0 de 6 / Nota 0.00
  - Resultados Corretos jogo: 0 de 6 / Nota 0.00
+ - Valgrinds Corretos jogo: 4 de 6 / Nota 6.66
  - Resultados Corretos main: 0 de 6 / Nota 0.00
+ - Valgrinds Corretos main: 6 de 6 / Nota 10.00
  - Resultados Corretos tabuleiro: 0 de 6 / Nota 0.00
+ - Valgrinds Corretos tabuleiro: 4 de 6 / Nota 6.66
  - Resultados Corretos completo: 0 de 6 / Nota 0.00
- - Soma das notas do Raony: 30.000
- - Campos Considerados: 9
- - Média do Raony: 3.33
+ - Valgrinds Corretos completo: 2 de 6 / Nota 3.33
+ - Soma das notas do Raony: 59.980
+ - Campos Considerados: 15
+ - Média do Raony: 3.99
 
 ----------------------------------------------------------------------------
 

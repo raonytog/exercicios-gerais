@@ -1,7 +1,6 @@
 #ifndef _JOGADA_H
 #define _JOGADA_H
 
-
 typedef struct{
     int x;
     int y;

@@ -1,2 +1,2 @@
-Nome,Arquivos,Compilação,Linkagem,Resultado jogada,Resultado jogador,Resultado jogo,Resultado main,Resultado tabuleiro,Resultado completo,Média
-Raony,10.00,10.00,10.00,0.00,0.00,0.00,0.00,0.00,0.00,3.33
+Nome,Arquivos,Compilação,Linkagem,Resultado jogada,Valgrind jogada,Resultado jogador,Valgrind jogador,Resultado jogo,Valgrind jogo,Resultado main,Valgrind main,Resultado tabuleiro,Valgrind tabuleiro,Resultado completo,Valgrind completo,Média
+Raony,10.00,10.00,10.00,0.00,3.33,0.00,0.00,0.00,6.66,0.00,10.00,0.00,6.66,0.00,3.33,3.99

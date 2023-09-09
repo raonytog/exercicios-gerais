@@ -2,10 +2,12 @@
 #include "jogador.h"
 #include "jogada.h"
 #include "jogo.h"
+#include <stdio.h>
 
 tJogada LeJogada() {
     tJogada jogada;
-    scanf("%d %d", jogada.x, jogada.y);
+    scanf("%*[ \n]");
+    scanf("%d %d%*c", &jogada.x, &jogada.y);
     return jogada;
 }
 

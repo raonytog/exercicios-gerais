@@ -1,0 +1,38 @@
+Jogador 1
+Digite uma posicao (x e y):
+Jogada [0,0]!
+	x--
+	---
+	---
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [1,1]!
+	x--
+	-0-
+	---
+Jogador 1
+Digite uma posicao (x e y):
+Jogada [0,0]!
+	x--
+	-0-
+	---
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [1,0]!
+	x--
+	00-
+	---
+Jogador 1
+Digite uma posicao (x e y):
+Jogada [0,2]!
+	x-x
+	00-
+	---
+Jogador 2
+Digite uma posicao (x e y):
+Jogada [1,2]!
+	x-x
+	000
+	---
+JOGADOR 2 Venceu!
+Jogar novamente? (s,n) 
