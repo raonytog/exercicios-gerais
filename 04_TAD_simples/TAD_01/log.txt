@@ -1,0 +1,322 @@
+Ignorando o Valgrind
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: Raony
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Raony:
+ - Diretório Resultados/Raony criado com sucesso!
+ - Diretório Resultados/Raony/jogada criado com sucesso!
+ - Diretório Resultados/Raony/jogador criado com sucesso!
+ - Diretório Resultados/Raony/jogo criado com sucesso!
+ - Diretório Resultados/Raony/main criado com sucesso!
+ - Diretório Resultados/Raony/tabuleiro criado com sucesso!
+ - Diretório Resultados/Raony/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Raony/jogada.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/jogada.h' encontrado!
+ - Arquivo esperado 'Respostas/Raony/jogador.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/jogador.h' encontrado!
+ - Arquivo esperado 'Respostas/Raony/jogo.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/jogo.h' encontrado!
+ - Arquivo esperado 'Respostas/Raony/main.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/tabuleiro.c' encontrado!
+ - Arquivo esperado 'Respostas/Raony/tabuleiro.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta jogada:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/jogada
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/jogada
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/jogada
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/jogada
+ - Pasta jogador:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/jogador
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/jogador
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/jogador
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/jogador
+ - Pasta jogo:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/jogo
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/jogo
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/jogo
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/jogo
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/main
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/main
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/main
+ - Pasta tabuleiro:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/tabuleiro
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/tabuleiro
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Raony/tabuleiro
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/tabuleiro
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Raony/completo
+ - Copiando os 'Respostas/Raony/*.h' do aluno para a pasta Resultados/Raony/completo
+ - Copiando os 'Respostas/Raony/*.c' do aluno para a pasta Resultados/Raony/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta jogada:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Arquivo de output gerado: Resultados/Raony/jogada/result_compilation.txt.
+ - Pasta jogador:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Arquivo de output gerado: Resultados/Raony/jogador/result_compilation.txt.
+ - Pasta jogo:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Arquivo de output gerado: Resultados/Raony/jogo/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Arquivo de output gerado: Resultados/Raony/main/result_compilation.txt.
+ - Pasta tabuleiro:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo jogada.c do aluno, gerando o jogada.o
+ - Compilando o arquivo jogador.c do aluno, gerando o jogador.o
+ - Compilando o arquivo jogo.c do aluno, gerando o jogo.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Compilando o arquivo tabuleiro.c do aluno, gerando o tabuleiro.o
+ - Arquivo de output gerado: Resultados/Raony/completo/result_compilation.txt.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Raony:
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/Raony/jogador
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/Raony/jogo
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/Raony/main
+ - Copiando o Gabarito-obj/jogada.o para a pasta Resultados/Raony/tabuleiro
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/Raony/jogada
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/Raony/jogo
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/Raony/main
+ - Copiando o Gabarito-obj/jogador.o para a pasta Resultados/Raony/tabuleiro
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/Raony/jogada
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/Raony/jogador
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/Raony/main
+ - Copiando o Gabarito-obj/jogo.o para a pasta Resultados/Raony/tabuleiro
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Raony/jogada
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Raony/jogador
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Raony/jogo
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Raony/tabuleiro
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/Raony/jogada
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/Raony/jogador
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/Raony/jogo
+ - Copiando o Gabarito-obj/tabuleiro.o para a pasta Resultados/Raony/main
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta jogada:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogada/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/jogada/result_linking.txt
+ - Pasta jogador:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogador/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/jogador/result_linking.txt
+ - Pasta jogo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/jogo/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/main/result_linking.txt
+ - Pasta tabuleiro:
+ - Gerando o binário prog linkando com o(s) arquivo(s) tabuleiro/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Raony/completo/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta jogada / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/jogada/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogada / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/jogada/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogada / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/jogada/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogada / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/jogada/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogada / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/jogada/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogada / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/jogada/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 2.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogador / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/jogador/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogador / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/jogador/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogador / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/jogador/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogador / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/jogador/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogador / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/jogador/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogador / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/jogador/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogo / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/jogo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogo / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/jogo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogo / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/jogo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogo / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/jogo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogo / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/jogo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta jogo / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/jogo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta tabuleiro / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/1/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta tabuleiro / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/2/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta tabuleiro / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/3/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta tabuleiro / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/4/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta tabuleiro / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/5/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta tabuleiro / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/tabuleiro/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 0, frees: 0, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: Raony
+ - Arquivos Corretos: 9 de 9 / Nota 10.00
+ - Compilações Corretas: 30 de 30 / Nota 10.00
+ - Linkagens Corretas: 6 de 6 / Nota 10.00
+ - Resultados Corretos jogada: 0 de 6 / Nota 0.00
+ - Resultados Corretos jogador: 0 de 6 / Nota 0.00
+ - Resultados Corretos jogo: 0 de 6 / Nota 0.00
+ - Resultados Corretos main: 0 de 6 / Nota 0.00
+ - Resultados Corretos tabuleiro: 0 de 6 / Nota 0.00
+ - Resultados Corretos completo: 0 de 6 / Nota 0.00
+ - Soma das notas do Raony: 30.000
+ - Campos Considerados: 9
+ - Média do Raony: 3.33
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+

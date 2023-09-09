@@ -1,0 +1,114 @@
+Resultados/Raony/jogo/jogada.c: In function ‘LeJogada’:
+Resultados/Raony/jogo/jogada.c:8:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    8 |     scanf("%d %d", jogada.x, jogada.y);
+      |     ^~~~~
+Resultados/Raony/jogo/jogada.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    4 | #include "jogo.h"
+  +++ |+#include <stdio.h>
+    5 | 
+Resultados/Raony/jogo/jogada.c:8:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    8 |     scanf("%d %d", jogada.x, jogada.y);
+      |     ^~~~~
+Resultados/Raony/jogo/jogada.c:8:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Resultados/Raony/jogo/jogada.c:8:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+    8 |     scanf("%d %d", jogada.x, jogada.y);
+      |            ~^      ~~~~~~~~
+      |             |            |
+      |             int *        int
+Resultados/Raony/jogo/jogada.c:8:16: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘int’ [-Wformat=]
+    8 |     scanf("%d %d", jogada.x, jogada.y);
+      |               ~^             ~~~~~~~~
+      |                |                   |
+      |                int *               int
+Resultados/Raony/jogo/jogada.c:8:5: warning: ‘jogada.y’ is used uninitialized [-Wuninitialized]
+    8 |     scanf("%d %d", jogada.x, jogada.y);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resultados/Raony/jogo/jogada.c:7:13: note: ‘jogada’ declared here
+    7 |     tJogada jogada;
+      |             ^~~~~~
+Resultados/Raony/jogo/jogada.c:8:5: warning: ‘jogada.x’ is used uninitialized [-Wuninitialized]
+    8 |     scanf("%d %d", jogada.x, jogada.y);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resultados/Raony/jogo/jogada.c:7:13: note: ‘jogada’ declared here
+    7 |     tJogada jogada;
+      |             ^~~~~~
+Resultados/Raony/jogo/jogada.c:9:12: warning: ‘jogada’ is used uninitialized [-Wuninitialized]
+    9 |     return jogada;
+      |            ^~~~~~
+Resultados/Raony/jogo/jogada.c:7:13: note: ‘jogada’ declared here
+    7 |     tJogada jogada;
+      |             ^~~~~~
+Resultados/Raony/jogo/jogador.c:8: warning: "PECA_1" redefined
+    8 | #define PECA_1 'x'
+      | 
+In file included from Resultados/Raony/jogo/jogador.c:1:
+Resultados/Raony/jogo/tabuleiro.h:6: note: this is the location of the previous definition
+    6 | #define PECA_1 1
+      | 
+Resultados/Raony/jogo/jogador.c:9: warning: "PECA_2" redefined
+    9 | #define PECA_2 '0'
+      | 
+In file included from Resultados/Raony/jogo/jogador.c:1:
+Resultados/Raony/jogo/tabuleiro.h:7: note: this is the location of the previous definition
+    7 | #define PECA_2 2
+      | 
+Resultados/Raony/jogo/jogador.c: In function ‘VenceuJogador’:
+Resultados/Raony/jogo/jogador.c:49:52: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   49 |                 tabuleiro.posicoes[1][1] == PECA_1 &&
+      |                                                    ^
+Resultados/Raony/jogo/jogador.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+   58 | }
+      | ^
+Resultados/Raony/jogo/jogo.c: In function ‘ContinuaJogo’:
+Resultados/Raony/jogo/jogo.c:37:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   37 |     scanf("%c", &resposta);
+      |     ^~~~~
+Resultados/Raony/jogo/jogo.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    4 | #include "jogo.h"
+  +++ |+#include <stdio.h>
+    5 | 
+Resultados/Raony/jogo/jogo.c:37:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   37 |     scanf("%c", &resposta);
+      |     ^~~~~
+Resultados/Raony/jogo/jogo.c:37:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Resultados/Raony/jogo/jogo.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+   40 | }
+      | ^
+Resultados/Raony/jogo/tabuleiro.c:7: warning: "PECA_1" redefined
+    7 | #define PECA_1 'x'
+      | 
+In file included from Resultados/Raony/jogo/tabuleiro.c:1:
+Resultados/Raony/jogo/tabuleiro.h:6: note: this is the location of the previous definition
+    6 | #define PECA_1 1
+      | 
+Resultados/Raony/jogo/tabuleiro.c:8: warning: "PECA_2" redefined
+    8 | #define PECA_2 '0'
+      | 
+In file included from Resultados/Raony/jogo/tabuleiro.c:1:
+Resultados/Raony/jogo/tabuleiro.h:7: note: this is the location of the previous definition
+    7 | #define PECA_2 2
+      | 
+Resultados/Raony/jogo/tabuleiro.c: In function ‘TemPosicaoLivreTabuleiro’:
+Resultados/Raony/jogo/tabuleiro.c:34:17: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   34 |             if (tabuleiro.posicoes[i][j] = PECA_VAZIA) return 1;
+      |                 ^~~~~~~~~
+Resultados/Raony/jogo/tabuleiro.c: In function ‘EstaLivrePosicaoTabuleiro’:
+Resultados/Raony/jogo/tabuleiro.c:54:28: warning: comparison between pointer and integer
+   54 |     if (tabuleiro.posicoes == tabuleiro.pecaVazio) return 1;
+      |                            ^~
+Resultados/Raony/jogo/tabuleiro.c: In function ‘ImprimeTabuleiro’:
+Resultados/Raony/jogo/tabuleiro.c:65:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   65 |         printf("\t");
+      |         ^~~~~~
+Resultados/Raony/jogo/tabuleiro.c:5:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    4 | #include "jogo.h"
+  +++ |+#include <stdio.h>
+    5 | 
+Resultados/Raony/jogo/tabuleiro.c:65:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   65 |         printf("\t");
+      |         ^~~~~~
+Resultados/Raony/jogo/tabuleiro.c:65:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/Raony/jogo/tabuleiro.c: In function ‘MarcaPosicaoTabuleiro’:
+Resultados/Raony/jogo/tabuleiro.c:29:1: warning: control reaches end of non-void function [-Wreturn-type]
+   29 | }
+      | ^

@@ -1,10 +1,7 @@
+#include "tabuleiro.h"
+#include "jogador.h"
 #include "jogada.h"
-
-typedef struct{
-    int x;
-    int y;
-    int sucesso;
-} tJogada;
+#include "jogo.h"
 
 tJogada LeJogada() {
     tJogada jogada;
@@ -20,11 +17,7 @@ int ObtemJogadaY(tJogada jogada) {
     return jogada.y;
 }
 
-/**
- * Retorna 1 se a jogada foi bem sucedida e 0 caso contrário.
- * 
- * @param jogada a jogada.
- * 
- * @return 1 se a jogada foi bem sucedida, 0 caso contrário.
- */
-int FoiJogadaBemSucedida(tJogada jogada);
+int FoiJogadaBemSucedida(tJogada jogada) {
+    if (EhPosicaoValidaTabuleiro(jogada.x, jogada.y)) return 1;
+    return 0;
+}
