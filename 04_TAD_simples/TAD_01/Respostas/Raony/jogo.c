@@ -24,7 +24,6 @@ tJogo CriaJogo() {
 
 void ComecaJogo(tJogo jogo) {
     jogo = CriaJogo();
-
     tJogada jogada;
 
     tTabuleiro tabuleiro;
@@ -34,46 +33,31 @@ void ComecaJogo(tJogo jogo) {
     p1 = jogo.jogador1;
     p2 = jogo.jogador2;
 
-
-    int rodada = 0, jogadaTronxa = 0, ultimoJogador = 0, flagResetou = 0;
+    int rodada = 0, jogadaTronxa = 0, ultimoJogador = 0;
     while (TRUE) {
-        if (flagResetou) {
-            jogo = CriaJogo();
-            tabuleiro = jogo.tabuleiro;
-            flagResetou = 0;
-        }
-
         ultimoJogador = 0;
         jogadaTronxa = 0;
-        if (rodada%2 == 0) {    //player 1
-            ultimoJogador = 1;
-            printf("Jogador 1\n");
-            printf("Digite uma posicao (x e y):");
-            jogada = LeJogada();
-            printf("\n");
 
-            if (FoiJogadaBemSucedida(jogada)) {
-                printf("Jogada [%d,%d]!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-                tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, p1.id, 
-                            ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-                ImprimeTabuleiro(tabuleiro);
-            } else jogadaTronxa = 1;
+        // define quem é o jogador
+        if (rodada%2 == 0) ultimoJogador = 1;
+        else ultimoJogador = 2;
 
-        } else {    //player 2
-            ultimoJogador = 2;
-            printf("Jogador 2\n");
-            printf("Digite uma posicao (x e y):");
-            jogada = LeJogada();
-            printf("\n");
+        printf("Jogador %d\n", ultimoJogador);
+        printf("Digite uma posicao (x e y):");
+        jogada = LeJogada();
+        printf("\n");
 
-            if (FoiJogadaBemSucedida(jogada) && EstaLivrePosicaoTabuleiro(tabuleiro, ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
-                printf("Jogada [%d,%d]!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-                tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, p2.id, 
-                            ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-                ImprimeTabuleiro(tabuleiro);
-            } else jogadaTronxa = 1;
-        }
+        // se a jogada foi valida e nao ocupada
+        if (FoiJogadaBemSucedida(jogada) && 
+            EstaLivrePosicaoTabuleiro(tabuleiro, ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
 
+            printf("Jogada [%d,%d]!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
+            tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, ultimoJogador, 
+                        ObtemJogadaX(jogada), ObtemJogadaY(jogada));
+            ImprimeTabuleiro(tabuleiro);
+            jogo.tabuleiro = tabuleiro;
+            rodada++;
+        } else jogadaTronxa = 1; // se a jogada foi invalida por ocupacao ou limites
 
         if (jogadaTronxa) {
             printf("Posicao invalida ");
@@ -81,30 +65,37 @@ void ComecaJogo(tJogo jogo) {
                 EhPosicaoValidaTabuleiro(ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
                 printf("(OCUPADA ");
             } else printf("(FORA DO TABULEIRO ");
-
-            printf("- [%d,%d] )\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
+            printf("- [%d,%d] )!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
         }
 
         // caso de vitoria ou fim de jogo
         if (VenceuJogador(p1, tabuleiro) || VenceuJogador(p2, tabuleiro)) {
             printf("JOGADOR %d Venceu!\n", ultimoJogador);
-            printf("Jogar novamente? (s,n) ");
-            
-            if (ContinuaJogo()) {
-                flagResetou = 1;
+            printf("Jogar novamente? (s,n)\n");
+
+            if (ContinuaJogo()) {   //reseta o jogo caso queira continuar
+                jogo = CriaJogo();
+                tabuleiro = jogo.tabuleiro;
                 rodada = 0;
-            } else break;;
+            } else break;
         } 
 
-        if (AcabouJogo) break;
-
-        rodada++;
-    }
+        if (AcabouJogo(jogo)) {
+            printf("Sem vencedor!\n");
+            printf("Jogar novamente? (s,n)");
+            if (ContinuaJogo()) {   //reseta o jogo caso queira continuar
+                printf("\n");
+                jogo = CriaJogo();
+                tabuleiro = jogo.tabuleiro;
+                rodada = 0;
+            } else break;
+        } 
+    } 
 }
 
 int AcabouJogo(tJogo jogo) {
-    if (TemPosicaoLivreTabuleiro(jogo.tabuleiro)) return 0;
-    return 1;
+    if (!TemPosicaoLivreTabuleiro(jogo.tabuleiro)) return 1;
+    return 0;
 }
 
 int ContinuaJogo() {

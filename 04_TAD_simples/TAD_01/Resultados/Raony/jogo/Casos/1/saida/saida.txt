@@ -62,4 +62,4 @@ Jogada [0,2]!
 	0X0
 	XXX
 JOGADOR 1 Venceu!
-Jogar novamente? (s,n) 
+Jogar novamente? (s,n)

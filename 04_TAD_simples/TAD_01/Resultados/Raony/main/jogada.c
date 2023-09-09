@@ -6,7 +6,6 @@
 
 tJogada LeJogada() {
     tJogada jogada;
-    scanf("%*[ \n]");
     scanf("%d %d%*c", &jogada.x, &jogada.y);
     return jogada;
 }

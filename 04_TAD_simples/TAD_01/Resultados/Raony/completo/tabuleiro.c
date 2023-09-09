@@ -5,13 +5,13 @@
 #include <stdio.h>
 
 #define PECA_VAZIA '-'
-#define PE_X 'x'
+#define PE_X 'X'
 #define PE_0 '0'
 
 tTabuleiro CriaTabuleiro() {
     tTabuleiro tabuleiro;
-    tabuleiro.peca1 = 'x';
-    tabuleiro.peca2 = '0';
+    tabuleiro.peca1 = PE_X;
+    tabuleiro.peca2 = PE_0;
     tabuleiro.pecaVazio = PECA_VAZIA;
 
     for (int i = 0; i < TAM_TABULEIRO; i++) {
@@ -27,13 +27,13 @@ tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y) {
         switch (peca){
             case 1:
                 if (!EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, x, y, peca)) {
-                    tabuleiro.posicoes[x][y] = PE_X;
+                    tabuleiro.posicoes[y][x] = PE_X;
                 }
                 break;
 
             case 2:
                 if (!EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, x, y, peca)) {
-                    tabuleiro.posicoes[x][y] = PE_0;
+                    tabuleiro.posicoes[y][x] = PE_0;
                 }
                 break;
         }
@@ -42,9 +42,10 @@ tTabuleiro MarcaPosicaoTabuleiro(tTabuleiro tabuleiro, int peca, int x, int y) {
 }
 
 int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro) {
-    for (int i = 0; i < TAM_TABULEIRO; i++) {
-        for (int j = 0; j < TAM_TABULEIRO; j++) {
-            if (tabuleiro.posicoes[i][j] = PECA_VAZIA) return 1;
+    int i = 0, j = 0;
+    for (i = 0; i < TAM_TABULEIRO; i++) {
+        for (j = 0; j < TAM_TABULEIRO; j++) {
+            if (tabuleiro.posicoes[i][j] == PECA_VAZIA) return 1;
         }
     }
     return 0;
@@ -53,18 +54,18 @@ int TemPosicaoLivreTabuleiro(tTabuleiro tabuleiro) {
 int EstaMarcadaPosicaoPecaTabuleiro(tTabuleiro tabuleiro, int x, int y, int peca) {
     switch (peca) {
     case 1:
-        if (PE_X == tabuleiro.posicoes[x][y]) return 1;
+        if (PE_X == tabuleiro.posicoes[y][x]) return 1;
         break;
 
     case 2:
-        if (PE_0 == tabuleiro.posicoes[x][y]) return 1;
+        if (PE_0 == tabuleiro.posicoes[y][x]) return 1;
         break;
     }
     return 0;
 }
 
 int EstaLivrePosicaoTabuleiro(tTabuleiro tabuleiro, int x, int y) {
-    if (tabuleiro.posicoes[x][y] == tabuleiro.pecaVazio) return 1;
+    if (tabuleiro.posicoes[y][x] == tabuleiro.pecaVazio) return 1;
     return 0;
 }
 

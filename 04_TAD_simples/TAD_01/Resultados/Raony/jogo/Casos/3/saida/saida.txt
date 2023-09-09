@@ -41,4 +41,4 @@ Jogada [0,2]!
 	X0-
 	0--
 JOGADOR 2 Venceu!
-Jogar novamente? (s,n) 
+Jogar novamente? (s,n)

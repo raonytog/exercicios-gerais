@@ -5,7 +5,3 @@ Resultados/Raony/jogo/jogador.c:49:50: warning: suggest parentheses around ‘&&
 Resultados/Raony/jogo/jogador.c:72:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
    72 |                 tabuleiro.posicoes[1][1] == PE_0 &&
       |                                                  ^
-Resultados/Raony/jogo/tabuleiro.c: In function ‘TemPosicaoLivreTabuleiro’:
-Resultados/Raony/jogo/tabuleiro.c:47:17: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
-   47 |             if (tabuleiro.posicoes[i][j] = PECA_VAZIA) return 1;
-      |                 ^~~~~~~~~

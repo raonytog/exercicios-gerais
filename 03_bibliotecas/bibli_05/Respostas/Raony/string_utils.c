@@ -35,7 +35,7 @@ void string_lower(char *str) {
 }
 
 void string_reverse(char *str) {
-    int i = 0, j = 0, length = string_length(str);
+    int i = 0, length = string_length(str);
     char temp[1];
 
     int stopCase = 0;

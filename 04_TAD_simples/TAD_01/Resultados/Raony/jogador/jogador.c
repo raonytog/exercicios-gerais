@@ -4,7 +4,7 @@
 #include "jogo.h"
 #include <stdio.h>
 
-#define PE_X 'x'
+#define PE_X 'X'
 #define PE_0 '0'
 
 tJogador CriaJogador(int idJogador) {
