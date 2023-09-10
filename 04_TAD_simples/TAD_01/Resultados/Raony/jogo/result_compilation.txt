@@ -5,3 +5,7 @@ Resultados/Raony/jogo/jogador.c:49:50: warning: suggest parentheses around ‘&&
 Resultados/Raony/jogo/jogador.c:72:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
    72 |                 tabuleiro.posicoes[1][1] == PE_0 &&
       |                                                  ^
+Resultados/Raony/jogo/jogo.c: In function ‘ContinuaJogo’:
+Resultados/Raony/jogo/jogo.c:108:1: warning: control reaches end of non-void function [-Wreturn-type]
+  108 | }
+      | ^

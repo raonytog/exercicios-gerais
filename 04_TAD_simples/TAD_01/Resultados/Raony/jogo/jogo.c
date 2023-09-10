@@ -80,7 +80,7 @@ void ComecaJogo(tJogo jogo) {
             } else break;
         } 
 
-        if (AcabouJogo(jogo)) {
+        if (AcabouJogo(jogo)) { // empate
             printf("Sem vencedor!\n");
             printf("Jogar novamente? (s,n)");
             if (ContinuaJogo()) {   //reseta o jogo caso queira continuar
@@ -99,8 +99,10 @@ int AcabouJogo(tJogo jogo) {
 }
 
 int ContinuaJogo() {
-    char decisao;
-    scanf("%c%*c", &decisao);
-    if (decisao == 's') return 1;
-    return 0;
+    char decisao = '0';
+    while (decisao != 's' || decisao != 'n') {
+        scanf("%c", &decisao);
+        if (decisao == 's') return 1;
+        if (decisao == 'n') return 0;
+    }
 }
