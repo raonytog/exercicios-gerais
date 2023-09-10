@@ -1,0 +1,6 @@
+Resultados/Raony/completo/main.c: In function ‘main’:
+Resultados/Raony/completo/main.c:12:17: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   12 |         scanf("%s%*c", &tempNome);
+      |                ~^      ~~~~~~~~~
+      |                 |      |
+      |                 char * char (*)[50]
