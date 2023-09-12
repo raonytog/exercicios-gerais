@@ -11,6 +11,7 @@ tConta criar_conta(int numero, tUsuario user) {
 }
 
 void imprime_conta(tConta conta) {
+    printf("Conta: %d\n", conta.numero);
     printf("Saldo: R$ %.2f\n", conta.saldo);
     imprime_usuario(conta.user);
     printf("\n");

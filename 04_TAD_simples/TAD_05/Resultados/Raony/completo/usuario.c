@@ -9,10 +9,6 @@ tUsuario criar_usuario(char nome[20], char cpf[15]) {
     return usuario;
 }
 
-/**
- * @brief Imprime os dados de um usuário.
- * @param user Usuário a ser impresso.
- */
 void imprime_usuario(tUsuario user) {
     printf("Nome: %s\n", user.nome);
     printf("CPF: %s\n", user.cpf);

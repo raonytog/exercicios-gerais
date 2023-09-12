@@ -1,11 +1,11 @@
 Resultados/Raony/conta/main.c: In function ‘main’:
-Resultados/Raony/conta/main.c:30:21: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[100]’ [-Wformat=]
-   30 |             scanf("%s %s %d", &nome, &cpf, &num);
-      |                    ~^         ~~~~~
-      |                     |         |
-      |                     char *    char (*)[100]
-Resultados/Raony/conta/main.c:30:24: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[100]’ [-Wformat=]
-   30 |             scanf("%s %s %d", &nome, &cpf, &num);
-      |                       ~^             ~~~~
-      |                        |             |
-      |                        char *        char (*)[100]
+Resultados/Raony/conta/main.c:30:23: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[50]’ [-Wformat=]
+   30 |             scanf("%50s %15s %d", &nome, &cpf, &num);
+      |                    ~~~^           ~~~~~
+      |                       |           |
+      |                       char *      char (*)[50]
+Resultados/Raony/conta/main.c:30:28: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘char (*)[15]’ [-Wformat=]
+   30 |             scanf("%50s %15s %d", &nome, &cpf, &num);
+      |                         ~~~^             ~~~~
+      |                            |             |
+      |                            char *        char (*)[15]

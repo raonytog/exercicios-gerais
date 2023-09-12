@@ -9,8 +9,8 @@ int main () {
     tConta contas[numContas];
     tUsuario usuario;
 
-    char nome[100], cpf[100];
-    while (scanf("%d%*c", &option) == 1) {
+    char nome[50], cpf[15];
+    while (scanf("%d", &option) == 1) {
         switch (option) {
         case 0:
             return 0;
@@ -27,15 +27,14 @@ int main () {
             break;  
 
         case 3: //cadastra
-            scanf("%s %s %d", &nome, &cpf, &num);
+            scanf("%50s %15s %d", &nome, &cpf, &num);
             usuario = criar_usuario(nome, cpf);
-            contas[num] = criar_conta(num, usuario);
+            contas[num-1] = criar_conta(num, usuario);
             break;
 
         case 4: //relatorio
             printf("===| Imprimindo Relatorio |===\n");
             for (int i = 0; i < numContas; i++) {
-                printf("Conta: %d\n", i+1);
                 imprime_conta(contas[i]);
             }
             break;
