@@ -1,0 +1,7 @@
+/usr/bin/ld: Resultados/Raony/output/string_utils/main.o: in function `main':
+main.c:(.text+0x13b): undefined reference to `string_length'
+/usr/bin/ld: main.c:(.text+0x17e): undefined reference to `string_copy'
+/usr/bin/ld: main.c:(.text+0x1b6): undefined reference to `string_upper'
+/usr/bin/ld: main.c:(.text+0x1f1): undefined reference to `string_lower'
+/usr/bin/ld: main.c:(.text+0x22c): undefined reference to `string_reverse'
+collect2: error: ld returned 1 exit status

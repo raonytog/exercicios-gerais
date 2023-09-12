@@ -1,4 +1,0 @@
-Resultados/Raony/main/string_utils.c: In function ‘string_reverse’:
-Resultados/Raony/main/string_utils.c:40:16: warning: unused variable ‘j’ [-Wunused-variable]
-   40 |     int i = 0, j = 0, length = string_length(str);
-      |                ^
