@@ -51,7 +51,7 @@ int main () {
         case 5:
             string_reverse(string);
             printf("String invertida: ");
-            printf("%s\n", string);
+            printf("\n", string);
             break;
 
         case 6:
