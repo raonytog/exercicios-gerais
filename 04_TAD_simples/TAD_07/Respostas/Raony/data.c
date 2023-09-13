@@ -131,30 +131,36 @@ int calculaDiasAteMes(tData data) {
  */
 int calculaDiferencaDias(tData data1, tData data2) {
     int anoAux = 0, mesAux = 0, diferenca = 0, i = 0, subtracaoDias = 0;
-    int dia1 = data1.dia, dia2 = data2.dia;
-    int mes1 = data1.mes, mes2 = data2.mes;
-    int ano1 = data1.ano, ano2 = data2.ano;
+    tData aux;
     
-    if (dia1 == dia2 && mes1 == mes2 && ano1 == ano2) return 0;
+    if (data1.dia == data2.dia && data1.mes == data2.mes && data1.ano == data2.ano) return 0;
     
     // organiza o ano do menor pro maior
-    if (ano1 > ano2) {
-        anoAux = ano2;
-        ano2 = ano1;
-        ano1 = anoAux;
+    if (data1.ano > data2.ano) {
+        anoAux = data2.ano;
+        data2.ano = data1.ano;
+        data1.ano = anoAux;
     }
 
     // retorna qnts dias no intervalo dos anos
-    for (i = ano1; i <  ano2; i++) {
-        if (verificaBissexto(i)) diferenca += 366;
-        else diferenca += 365;
+    aux.ano = data1.ano;
+    while (aux.ano < data2.ano) {
+        if (verificaBissexto(aux)) diferenca += 366;
+        else diferenca + 365;
+        aux.ano++;
     }
+
+    // // retorna qnts dias no intervalo dos anos
+    // for (i = data1.ano; i <  data2.ano; i++) {
+    //     if (verificaBissexto(i)) diferenca += 366;
+    //     else diferenca += 365;
+    // }
  
     // organiza o ano do menor pro maior
-    if (mes1 > mes2) {
-        mesAux = mes2;
-        mes2 = mes1;
-        mes1 = mesAux;
+    if (data1.mes > data2.mes) {
+        mesAux = data2.mes;
+        data2.mes = data1.mes;
+        data1.mes = mesAux;
     }
 
     // retorna a qtd de dias no intervalo dos meses
@@ -165,5 +171,4 @@ int calculaDiferencaDias(tData data1, tData data2) {
     // subtrai a diferenca dos dias para corrigir os dias dos meses
     diferenca += dia2 - dia1;
     return diferenca;
-}
 }
