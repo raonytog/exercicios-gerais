@@ -2,7 +2,13 @@
 #include "jogo.h"
 
 int main () {
-    tJogo jogo = CriaJogo();
-    ComecaJogo(jogo);
+    while (1) {
+        tJogo jogo = CriaJogo();
+        ComecaJogo(jogo);
+        printf("Jogar novamente? (s,n)\n");
+
+        if (!ContinuaJogo()) break;
+
+    }
     return 0;
 }

@@ -14,12 +14,14 @@ int main () {
         scanf("%d %d %d%*c", &tempNota1, &tempNota2, &tempNota3);
         aluno[i] = criar_aluno(tempNome, tempMatricula, tempNota1, tempNota2, tempNota3);
 
+        // preenche alunos aprovados
         if (aluno_aprovado(aluno[i])) {
             alunoAprovado[j] = aluno[i];
             j++;
         }
     }
 
+    // ordena por matricula (menor a maior)
     int tam = j;
     for (i = 0; i < tam-1; i++) {
         for (j = i+1; j < tam; j++) {

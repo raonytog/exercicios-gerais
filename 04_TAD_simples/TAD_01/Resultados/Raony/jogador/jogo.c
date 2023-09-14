@@ -43,7 +43,6 @@ void ComecaJogo(tJogo jogo) {
         else ultimoJogador = 2;
 
         printf("Jogador %d\n", ultimoJogador);
-        printf("Digite uma posicao (x e y):");
         jogada = LeJogada();
         printf("\n");
 
@@ -71,24 +70,12 @@ void ComecaJogo(tJogo jogo) {
         // caso de vitoria ou fim de jogo
         if (VenceuJogador(p1, tabuleiro) || VenceuJogador(p2, tabuleiro)) {
             printf("JOGADOR %d Venceu!\n", ultimoJogador);
-            printf("Jogar novamente? (s,n)\n");
-
-            if (ContinuaJogo()) {   //reseta o jogo caso queira continuar
-                jogo = CriaJogo();
-                tabuleiro = jogo.tabuleiro;
-                rodada = 0;
-            } else break;
+            break;
         } 
 
         if (AcabouJogo(jogo)) { // empate
             printf("Sem vencedor!\n");
-            printf("Jogar novamente? (s,n)");
-            if (ContinuaJogo()) {   //reseta o jogo caso queira continuar
-                printf("\n");
-                jogo = CriaJogo();
-                tabuleiro = jogo.tabuleiro;
-                rodada = 0;
-            } else break;
+            break;
         } 
     } 
 }

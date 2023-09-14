@@ -1,4 +1,1 @@
-Clovis
-Jorge
-Ronaldo
-Maria
+timeout: failed to run command ‘Resultados/Raony/main/prog’: No such file or directory

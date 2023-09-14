@@ -4,3 +4,18 @@ Resultados/Raony/main/main.c:12:17: warning: format ‘%s’ expects argument of
       |                ~^      ~~~~~~~~~
       |                 |      |
       |                 char * char (*)[50]
+Resultados/Raony/main/main.c:15:20: warning: implicit declaration of function ‘criar_aluno’; did you mean ‘CriaAluno’? [-Wimplicit-function-declaration]
+   15 |         aluno[i] = criar_aluno(tempNome, tempMatricula, tempNota1, tempNota2, tempNota3);
+      |                    ^~~~~~~~~~~
+      |                    CriaAluno
+Resultados/Raony/main/main.c:15:20: error: incompatible types when assigning to type ‘tAluno’ {aka ‘struct Aluno’} from type ‘int’
+Resultados/Raony/main/main.c:18:13: warning: implicit declaration of function ‘aluno_aprovado’ [-Wimplicit-function-declaration]
+   18 |         if (aluno_aprovado(aluno[i])) {
+      |             ^~~~~~~~~~~~~~
+Resultados/Raony/main/main.c:28:17: warning: implicit declaration of function ‘comparar_matricula_aluno’ [-Wimplicit-function-declaration]
+   28 |             if (comparar_matricula_aluno(alunoAprovado[i], alunoAprovado[j]) == 1) {
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+Resultados/Raony/main/main.c:37:9: warning: implicit declaration of function ‘imprimir_aluno’; did you mean ‘ImprimeAluno’? [-Wimplicit-function-declaration]
+   37 |         imprimir_aluno(alunoAprovado[i]);
+      |         ^~~~~~~~~~~~~~
+      |         ImprimeAluno

@@ -1,0 +1,7 @@
+Loja -1353140576: 	Arthur > Total vendido: R$5250.00
+		Total recebido: R$2550.00
+	Matheus > Total vendido: R$5200.00
+		Total recebido: R$2916.00
+Loja -1353139920: 	Joao > Total vendido: R$1500.00
+		Total recebido: R$4075.00
+Loja -1353139264: 

@@ -1,0 +1,9 @@
+Loja 1: Lucro total: R$ 4630330920884701757440.00
+	 > Total vendido: R$0.00
+		Total recebido: R$-2315165460442350878720.00
+	 > Total vendido: R$0.00
+		Total recebido: R$-2315165460442350878720.00
+Loja 2: Lucro total: R$ -nan
+	Joao > Total vendido: R$-nan
+		Total recebido: R$-nan
+Loja 3: Lucro total: R$ -8000.00

@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/Raony/aluno/main.o: in function `main':
+main.c:(.text+0x177): undefined reference to `LeAluno'
+/usr/bin/ld: main.c:(.text+0x2f6): undefined reference to `ComparaMatricula'
+/usr/bin/ld: main.c:(.text+0x50e): undefined reference to `VerificaAprovacao'
+/usr/bin/ld: main.c:(.text+0x58b): undefined reference to `ImprimeAluno'
+collect2: error: ld returned 1 exit status

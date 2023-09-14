@@ -6,6 +6,7 @@
 
 tJogada LeJogada() {
     tJogada jogada;
+    printf("Digite uma posicao (x e y):");
     scanf("%d %d%*c", &jogada.x, &jogada.y);
     return jogada;
 }

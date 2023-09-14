@@ -1,0 +1,35 @@
+Resultados/Raony/vendedor/loja.c: In function ‘ImprimeRelatorioLoja’:
+Resultados/Raony/vendedor/loja.c:52:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   52 |     printf("Loja %d: ");
+      |     ^~~~~~
+Resultados/Raony/vendedor/loja.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include "loja.h"
+  +++ |+#include <stdio.h>
+    3 | 
+Resultados/Raony/vendedor/loja.c:52:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   52 |     printf("Loja %d: ");
+      |     ^~~~~~
+Resultados/Raony/vendedor/loja.c:52:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/Raony/vendedor/loja.c:52:19: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   52 |     printf("Loja %d: ");
+      |                  ~^
+      |                   |
+      |                   int
+cc1: fatal error: Resultados/Raony/vendedor/main.c: No such file or directory
+compilation terminated.
+Resultados/Raony/vendedor/vendedor.c: In function ‘ImprimeRelatorioVendedor’:
+Resultados/Raony/vendedor/vendedor.c:38:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   38 |     printf("\t%s > Total vendido: R$%.2f\n", vendedor.nome, vendedor.valor_vendido);
+      |     ^~~~~~
+Resultados/Raony/vendedor/vendedor.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+Resultados/Raony/vendedor/vendedor.c:38:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   38 |     printf("\t%s > Total vendido: R$%.2f\n", vendedor.nome, vendedor.valor_vendido);
+      |     ^~~~~~
+Resultados/Raony/vendedor/vendedor.c:38:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/Raony/vendedor/vendedor.c: In function ‘ContabilizaVenda’:
+Resultados/Raony/vendedor/vendedor.c:18:1: warning: control reaches end of non-void function [-Wreturn-type]
+   18 | }
+      | ^
