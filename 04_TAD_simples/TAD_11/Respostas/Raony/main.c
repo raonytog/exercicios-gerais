@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include "loja.h"
 
+#define MAX 1001
+
 int main () {
     int nLojas = 0, operacaoEscolhida = 0, id = 0, alugel = 0, i = 0;
+    float valor = 0;
+    char nome[MAX];
     scanf("%d", &nLojas);
     tLoja lojas[nLojas];
 
@@ -19,7 +23,8 @@ int main () {
             break;
 
         case 2:
-            
+            scanf("%s %f .%d", nome, &valor, &id);
+            ContrataVendedor(loja, vendedor);
             break;
 
         case 3:
