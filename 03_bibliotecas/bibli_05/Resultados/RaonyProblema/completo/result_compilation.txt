@@ -1,4 +1,4 @@
 Resultados/RaonyProblema/completo/string_utils.c: In function ‘string_reverse’:
-Resultados/RaonyProblema/completo/string_utils.c:65:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   65 |          i >= 0, j < length;
+Resultados/RaonyProblema/completo/string_utils.c:47:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   47 |          i >= 0, j < length;
       |                ^
