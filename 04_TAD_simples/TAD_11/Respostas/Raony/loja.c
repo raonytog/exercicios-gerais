@@ -1,5 +1,6 @@
 #include "vendedor.h"
 #include "loja.h"
+#include <stdio.h>
 
 tLoja AbreLoja(int id, float aluguel) {
     tLoja loja;
@@ -22,34 +23,32 @@ tLoja ContrataVendedor(tLoja loja, tVendedor vendedor) {
 }
 
 tLoja RegistraVenda(tLoja loja, char nome[50], float valor) {
-    tVendedor vendedor;
+
     int i = 0;
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < loja.totalVendedores; i++) {
         if (VerificaNomeVendedor(loja.vendedores[i], nome)) {
-            vendedor = loja.vendedores[i];
-            vendedor.valor_vendido += valor;
+            loja.vendedores[i] = ContabilizaVenda(loja.vendedores[i], valor);
             break;
         }
     }
-    loja.vendedores[i] = vendedor;
     return loja;
 }
 
 tLoja CalculaLucro(tLoja loja) {
-    int i = 0;
     tVendedor vendedor;
-    loja.lucro += loja.aluguel;
+    int i = 0;
+    loja.lucro -= loja.aluguel;
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < loja.totalVendedores; i++) {
         vendedor = loja.vendedores[i];
-        loja.lucro += GetTotalVendido(vendedor) - GetSalario(vendedor);  
+        loja.lucro += (GetTotalVendido(vendedor) - GetTotalRecebido(vendedor));  
     }
-
     return loja;
 }
 
 void ImprimeRelatorioLoja(tLoja loja) {
-    printf("Loja %d: ");
+    loja = CalculaLucro(loja);
+    printf("Loja %d: Lucro total: R$ %.2f\n", loja.id, loja.lucro);
     for (int i = 0; i < loja.totalVendedores; i++) {
         ImprimeRelatorioVendedor(loja.vendedores[i]);
     }

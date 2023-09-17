@@ -1,4 +1,3 @@
-Ignorando o Valgrind
 Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
  - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
 #######################################
@@ -15,10 +14,10 @@ CRIANDO O DIRETÓRIO DE RESULTADO PARA Raony:
 CHECKANDO OS ARQUIVOS DO ALUNO:
  - Arquivo esperado 'Respostas/Raony/loja.c' encontrado!
  - Arquivo esperado 'Respostas/Raony/loja.h' encontrado!
- - Arquivo esperado 'Respostas/Raony/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/Raony/main.c' encontrado!
  - Arquivo esperado 'Respostas/Raony/vendedor.c' encontrado!
  - Arquivo esperado 'Respostas/Raony/vendedor.h' encontrado!
- - Arquivos esperados enviados: Faltando!
+ - Arquivos esperados enviados: Ok!
 
 COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Pasta loja:
@@ -46,28 +45,23 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Pasta loja:
  - Compilando o arquivo loja.c do aluno, gerando o loja.o
  - Compilando o arquivo main.c do aluno, gerando o main.o
- - Erro de compilação! Verifique se o arquivo Resultados/Raony/loja/main.c está correto.
  - Compilando o arquivo vendedor.c do aluno, gerando o vendedor.o
  - Arquivo de output gerado: Resultados/Raony/loja/result_compilation.txt.
  - Pasta main:
  - Compilando o arquivo loja.c do aluno, gerando o loja.o
  - Compilando o arquivo main.c do aluno, gerando o main.o
- - Erro de compilação! Verifique se o arquivo Resultados/Raony/main/main.c está correto.
  - Compilando o arquivo vendedor.c do aluno, gerando o vendedor.o
  - Arquivo de output gerado: Resultados/Raony/main/result_compilation.txt.
  - Pasta vendedor:
  - Compilando o arquivo loja.c do aluno, gerando o loja.o
  - Compilando o arquivo main.c do aluno, gerando o main.o
- - Erro de compilação! Verifique se o arquivo Resultados/Raony/vendedor/main.c está correto.
  - Compilando o arquivo vendedor.c do aluno, gerando o vendedor.o
  - Arquivo de output gerado: Resultados/Raony/vendedor/result_compilation.txt.
  - Pasta completo:
  - Compilando o arquivo loja.c do aluno, gerando o loja.o
  - Compilando o arquivo main.c do aluno, gerando o main.o
- - Erro de compilação! Verifique se o arquivo Resultados/Raony/completo/main.c está correto.
  - Compilando o arquivo vendedor.c do aluno, gerando o vendedor.o
  - Arquivo de output gerado: Resultados/Raony/completo/result_compilation.txt.
- - Arquivos Compilados: Erro!: 4 arquivos com erros de compilacao.
  - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Raony:
  - Copiando o Gabarito-obj/loja.o para a pasta Resultados/Raony/main
  - Copiando o Gabarito-obj/loja.o para a pasta Resultados/Raony/vendedor
@@ -84,7 +78,7 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Arquivo de output gerado: Resultados/Raony/loja/result_linking.txt
  - Pasta main:
  - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/Raony/main/result_linking.txt
  - Pasta vendedor:
  - Gerando o binário prog linkando com o(s) arquivo(s) vendedor/*.o
@@ -92,19 +86,26 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Arquivo de output gerado: Resultados/Raony/vendedor/result_linking.txt
  - Pasta completo:
  - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/Raony/completo/result_linking.txt
- - Arquivos Linkados: Erro! 2 arquivos com erros de linkagem.
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta loja / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/loja/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta vendedor / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/vendedor/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta completo / Caso 1:
- - Resultado para o saida.txt: Incorreto!
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
 
 #######################################
 RESULTADOS FINAIS
@@ -112,16 +113,20 @@ RESULTADOS FINAIS
 
 ----------------------------------------------------------------------------
 Nome 0: Raony
- - Arquivos Corretos: 4 de 5 / Nota 8.00
- - Compilações Corretas: 8 de 12 / Nota 6.66
- - Linkagens Corretas: 2 de 4 / Nota 5.00
+ - Arquivos Corretos: 5 de 5 / Nota 10.00
+ - Compilações Corretas: 12 de 12 / Nota 10.00
+ - Linkagens Corretas: 4 de 4 / Nota 10.00
  - Resultados Corretos loja: 0 de 1 / Nota 0.00
+ - Valgrinds Corretos loja: 1 de 1 / Nota 10.00
  - Resultados Corretos main: 0 de 1 / Nota 0.00
+ - Valgrinds Corretos main: 1 de 1 / Nota 10.00
  - Resultados Corretos vendedor: 0 de 1 / Nota 0.00
- - Resultados Corretos completo: 0 de 1 / Nota 0.00
- - Soma das notas do Raony: 19.660
- - Campos Considerados: 7
- - Média do Raony: 2.80
+ - Valgrinds Corretos vendedor: 1 de 1 / Nota 10.00
+ - Resultados Corretos completo: 1 de 1 / Nota 10.00
+ - Valgrinds Corretos completo: 1 de 1 / Nota 10.00
+ - Soma das notas do Raony: 80.000
+ - Campos Considerados: 11
+ - Média do Raony: 7.27
 
 ----------------------------------------------------------------------------
 

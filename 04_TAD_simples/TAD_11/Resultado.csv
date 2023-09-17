@@ -1,2 +1,2 @@
-Nome,Arquivos,Compilação,Linkagem,Resultado loja,Resultado main,Resultado vendedor,Resultado completo,Média
-Raony,8.00,6.66,5.00,0.00,0.00,0.00,0.00,2.80
+Nome,Arquivos,Compilação,Linkagem,Resultado loja,Valgrind loja,Resultado main,Valgrind main,Resultado vendedor,Valgrind vendedor,Resultado completo,Valgrind completo,Média
+Raony,10.00,10.00,10.00,0.00,10.00,0.00,10.00,0.00,10.00,10.00,10.00,7.27
