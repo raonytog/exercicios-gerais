@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 int main () {
-    int numContas = 0, option = 0, valor = 0,
-        user = 0, num = 0;
+    int numContas = 0, option = 0, valor = 0, user = 0, num = 0;
     scanf("%d%*c", &numContas);
     tConta contas[numContas];
     tUsuario usuario;
