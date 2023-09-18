@@ -108,12 +108,6 @@ int comparaData(tData data1, tData data2) {
     return 0;
 }
 
-/**
- * @brief Calcula o número de dias até o início do mês de uma determinada data.
- * 
- * @param data Data cujo número de dias até o início do mês será calculado.
- * @return int Número de dias até o início do mês da data.
- */
 int calculaDiasAteMes(tData data) {
     int dia = 0;
     for (int i = data.mes; i > 0; i--) {
@@ -122,13 +116,6 @@ int calculaDiasAteMes(tData data) {
     return dia;
 }
 
-/**
- * @brief Calcula a diferença em dias entre duas datas.
- * 
- * @param data1 Primeira data a ser comparada.
- * @param data2 Segunda data a ser comparada.
- * @return int Número de dias entre as duas datas.
- */
 int calculaDiferencaDias(tData data1, tData data2) {
     int anoAux = 0, mesAux = 0, diferenca = 0;
     tData aux;
@@ -149,12 +136,6 @@ int calculaDiferencaDias(tData data1, tData data2) {
         else diferenca += 365;
         aux.ano++;
     }
-
-    // // retorna qnts dias no intervalo dos anos
-    // for (i = data1.ano; i <  data2.ano; i++) {
-    //     if (verificaBissexto(i)) diferenca += 366;
-    //     else diferenca += 365;
-    // }
  
     // organiza o ano do menor pro maior
     if (data1.mes > data2.mes) {
@@ -168,11 +149,6 @@ int calculaDiferencaDias(tData data1, tData data2) {
         diferenca += numeroDiasMes(aux);
         aux.mes++;
     }
-
-    // // retorna a qtd de dias no intervalo dos meses
-    // for (i = mes1; i < mes2; i++) {
-    //     diferenca += numeroDiasMes(i, ano2);
-    // }
 
     // subtrai a diferenca dos dias para corrigir os dias dos meses
     diferenca += data2.dia - data1.dia;
