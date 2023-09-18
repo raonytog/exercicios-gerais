@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "aluno.h"
 
+// a ativdade foi alterada com uma funcao para ler alunos, mas eu nao vou refazer
+
 int main () {
     int nAlunos = 0, tempMatricula = 0, tempNota1 = 0, tempNota2 = 0, tempNota3 = 0, i = 0, j = 0;
     char tempNome[50];
