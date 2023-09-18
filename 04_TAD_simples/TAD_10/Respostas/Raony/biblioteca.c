@@ -62,5 +62,6 @@ void listarLivrosDaBiblioteca(tBiblioteca biblioteca) {
             imprimeLivro(biblioteca.livros[i]);
         }
 
-    } else printf("A biblioteca esta vazia!");
+    // se chegou aq, eh pq ta vazia
+    printf("A biblioteca esta vazia!");
 }
