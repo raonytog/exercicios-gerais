@@ -42,6 +42,7 @@ int main () {
                     result = matrix_create(rows1, cols1);
                     result = matrix_add(matrix1, matrix2);
                     matrix_print(result);
+
                 } else printf("Erro: as dimensoes da matriz nao correspondem\n");
                 break;
 
@@ -50,6 +51,7 @@ int main () {
                     result = matrix_create(rows1, cols1);
                     result = matrix_sub(matrix1, matrix2);
                     matrix_print(result);
+
                 } else printf("Erro: as dimensoes da matriz nao correspondem\n");
                 break;
 
@@ -58,6 +60,7 @@ int main () {
                     result = matrix_create(rows1, cols2);
                     result = matrix_multiply(matrix1, matrix2);
                     matrix_print(result);
+
                 } else printf("Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da segunda matriz\n");
                 break;
 
@@ -90,11 +93,10 @@ int main () {
                 break;
 
             case 6:
-                flagExit = 1;
+                return 0;
                 break;
         }
 
-        if (flagExit) break;
         printf("\n");
     }
     
