@@ -1,6 +1,7 @@
 #ifndef _TABULEIRO_H
 #define _TABULEIRO_H
 
+
 #define TAM_TABULEIRO 3
 #define PECA_1 1
 #define PECA_2 2
@@ -18,6 +19,7 @@ typedef struct{
  * @return o tabuleiro criado.
  */
 tTabuleiro CriaTabuleiro();
+
 
 /**
  * Marca uma posição do tabuleiro com a peça do jogador e retorna o tabuleiro.

@@ -5,7 +5,11 @@ Resultados/Raony/jogador/jogador.c:49:50: warning: suggest parentheses around �
 Resultados/Raony/jogador/jogador.c:72:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
    72 |                 tabuleiro.posicoes[1][1] == PE_0 &&
       |                                                  ^
+Resultados/Raony/jogador/jogo.c: In function ‘ComecaJogo’:
+Resultados/Raony/jogador/jogo.c:36:21: warning: variable ‘jogadaTronxa’ set but not used [-Wunused-but-set-variable]
+   36 |     int rodada = 0, jogadaTronxa = 0, ultimoJogador = 0, x = 0, y = 0;
+      |                     ^~~~~~~~~~~~
 Resultados/Raony/jogador/jogo.c: In function ‘ContinuaJogo’:
-Resultados/Raony/jogador/jogo.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
-   95 | }
+Resultados/Raony/jogador/jogo.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+  115 | }
       | ^

@@ -33,7 +33,7 @@ void ComecaJogo(tJogo jogo) {
     p1 = jogo.jogador1;
     p2 = jogo.jogador2;
 
-    int rodada = 0, jogadaTronxa = 0, ultimoJogador = 0;
+    int rodada = 0, jogadaTronxa = 0, ultimoJogador = 0, x = 0, y = 0;
     while (TRUE) {
         ultimoJogador = 0;
         jogadaTronxa = 0;
@@ -44,28 +44,48 @@ void ComecaJogo(tJogo jogo) {
 
         printf("Jogador %d\n", ultimoJogador);
         jogada = LeJogada();
+        x = ObtemJogadaX(jogada);
+        y = ObtemJogadaY(jogada);
         printf("\n");
 
-        // se a jogada foi valida e nao ocupada
-        if (FoiJogadaBemSucedida(jogada) && 
-            EstaLivrePosicaoTabuleiro(tabuleiro, ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
+        if (FoiJogadaBemSucedida(jogada)) {
+            if (EstaLivrePosicaoTabuleiro(tabuleiro, x, y)) {
+                printf("Jogada [%d,%d]!\n", x, y);
+                tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, ultimoJogador, x, y);
+                ImprimeTabuleiro(tabuleiro);
+            }
 
-            printf("Jogada [%d,%d]!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-            tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, ultimoJogador, 
-                        ObtemJogadaX(jogada), ObtemJogadaY(jogada));
-            ImprimeTabuleiro(tabuleiro);
-            jogo.tabuleiro = tabuleiro;
-            rodada++;
-        } else jogadaTronxa = 1; // se a jogada foi invalida por ocupacao ou limites
-
-        if (jogadaTronxa) {
+        } else {
             printf("Posicao invalida ");
-            if (!EstaLivrePosicaoTabuleiro(tabuleiro, ObtemJogadaX(jogada), ObtemJogadaY(jogada)) && 
-                EhPosicaoValidaTabuleiro(ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
+            
+            if (EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, x, y, 1) || 
+                EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, x, y, 2)) {
                 printf("(OCUPADA ");
-            } else printf("(FORA DO TABULEIRO ");
+            
+            } else if (!EhPosicaoValidaTabuleiro(x, y)) printf("(FORA DO TABULEIRO ");
             printf("- [%d,%d] )!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
         }
+ 
+        // // se a jogada foi valida e nao ocupada
+        // if (FoiJogadaBemSucedida(jogada) && 
+        //     EstaLivrePosicaoTabuleiro(tabuleiro, ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
+
+        //     printf("Jogada [%d,%d]!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
+        //     tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, ultimoJogador, 
+        //                 ObtemJogadaX(jogada), ObtemJogadaY(jogada));
+        //     ImprimeTabuleiro(tabuleiro);
+        //     jogo.tabuleiro = tabuleiro;
+        //     rodada++;
+        // } else jogadaTronxa = 1; // se a jogada foi invalida por ocupacao ou limites
+
+        // if (jogadaTronxa) {
+        //     printf("Posicao invalida ");
+        //     if (!EstaLivrePosicaoTabuleiro(tabuleiro, ObtemJogadaX(jogada), ObtemJogadaY(jogada)) && 
+        //         EhPosicaoValidaTabuleiro(ObtemJogadaX(jogada), ObtemJogadaY(jogada))) {
+        //         printf("(OCUPADA ");
+        //     } else printf("(FORA DO TABULEIRO ");
+        //     printf("- [%d,%d] )!\n", ObtemJogadaX(jogada), ObtemJogadaY(jogada));
+        // }
 
         // caso de vitoria ou fim de jogo
         if (VenceuJogador(p1, tabuleiro) || VenceuJogador(p2, tabuleiro)) {

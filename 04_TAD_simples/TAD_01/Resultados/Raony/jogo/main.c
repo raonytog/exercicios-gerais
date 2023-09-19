@@ -8,7 +8,6 @@ int main () {
         printf("Jogar novamente? (s,n)\n");
 
         if (!ContinuaJogo()) break;
-
     }
     return 0;
 }

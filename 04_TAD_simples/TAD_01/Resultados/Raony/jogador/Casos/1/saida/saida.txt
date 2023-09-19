@@ -1,1 +1,94 @@
-timeout: the monitored command dumped core
+Digite uma posicao (x e y):
+	---
+	--
+	---
+Digite uma posicao (x e y):
+	--
+	--
+	---
+Digite uma posicao (x e y):
+	--
+	--
+	--
+Digite uma posicao (x e y):
+	--
+	-
+	--
+Digite uma posicao (x e y):
+	--
+	-
+	-
+Digite uma posicao (x e y):
+	-
+	-
+	-
+Digite uma posicao (x e y):
+	-
+	
+	-
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	
+	
+	
+Sem vencedor!
+Jogar novamente? (s,n)
+Digite uma posicao (x e y):
+	---
+	--
+	---
+Digite uma posicao (x e y):
+	--
+	--
+	---
+Digite uma posicao (x e y):
+	--
+	--
+	--
+Digite uma posicao (x e y):
+	--
+	-
+	--
+Digite uma posicao (x e y):
+	--
+	-
+	-
+Digite uma posicao (x e y):
+	-
+	-
+	-
+Digite uma posicao (x e y):
+	-
+	
+	-
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	-
+	
+	
+Digite uma posicao (x e y):
+	-
+	
+	timeout: the monitored command dumped core

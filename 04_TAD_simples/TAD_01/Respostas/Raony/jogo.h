@@ -1,13 +1,14 @@
 #ifndef _JOGO_H
 #define _JOGO_H
 
-#include "tabuleiro.h"
 #include "jogador.h"
+#include "tabuleiro.h"
 
 typedef struct{
     tTabuleiro tabuleiro;
     tJogador jogador1;
     tJogador jogador2;
+    
 } tJogo;
 
 /**
