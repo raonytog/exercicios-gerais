@@ -1,15 +1,15 @@
+cc1: fatal error: Resultados/Raony/tabuleiro/jogada.c: No such file or directory
+compilation terminated.
 Resultados/Raony/tabuleiro/jogador.c: In function ‘VenceuJogador’:
-Resultados/Raony/tabuleiro/jogador.c:49:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
-   49 |                 tabuleiro.posicoes[1][1] == PE_X &&
-      |                                                  ^
-Resultados/Raony/tabuleiro/jogador.c:72:50: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
-   72 |                 tabuleiro.posicoes[1][1] == PE_0 &&
-      |                                                  ^
-Resultados/Raony/tabuleiro/jogo.c: In function ‘ComecaJogo’:
-Resultados/Raony/tabuleiro/jogo.c:36:21: warning: variable ‘jogadaTronxa’ set but not used [-Wunused-but-set-variable]
-   36 |     int rodada = 0, jogadaTronxa = 0, ultimoJogador = 0, x = 0, y = 0;
-      |                     ^~~~~~~~~~~~
-Resultados/Raony/tabuleiro/jogo.c: In function ‘ContinuaJogo’:
-Resultados/Raony/tabuleiro/jogo.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
-  115 | }
-      | ^
+Resultados/Raony/tabuleiro/jogador.c:57:55: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   57 |                 tabuleiro.posicoes[1][1] == PECA_DO_1 &&
+      |                                                       ^
+Resultados/Raony/tabuleiro/jogador.c:80:55: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   80 |                 tabuleiro.posicoes[1][1] == PECA_DO_2 &&
+      |                                                       ^
+cc1: fatal error: Resultados/Raony/tabuleiro/jogo.c: No such file or directory
+compilation terminated.
+cc1: fatal error: Resultados/Raony/tabuleiro/main.c: No such file or directory
+compilation terminated.
+cc1: fatal error: Resultados/Raony/tabuleiro/tabuleiro.c: No such file or directory
+compilation terminated.

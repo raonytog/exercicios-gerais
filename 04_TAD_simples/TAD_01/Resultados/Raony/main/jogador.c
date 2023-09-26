@@ -1,11 +1,10 @@
 #include "tabuleiro.h"
 #include "jogador.h"
 #include "jogada.h"
-#include "jogo.h"
 #include <stdio.h>
 
-#define PE_X 'X'
-#define PE_0 '0'
+#define PECA_DO_1 'X'
+#define PECA_DO_2 '0'
 
 tJogador CriaJogador(int idJogador) {
     tJogador jogador;
@@ -14,19 +13,28 @@ tJogador CriaJogador(int idJogador) {
 }
 
 tTabuleiro JogaJogador(tJogador jogador, tTabuleiro tabuleiro) {
+    printf("Jogador %d\n", jogador.id);
     tJogada jogada = LeJogada();
-    int x = ObtemJogadaX(jogada);
-    int y = ObtemJogadaY(jogada);
-    
-    switch (jogador.id) {
-    case 1:
-        tabuleiro.posicoes[x][y] = PECA_1;
-        break;
+    int x = jogada.x, y = jogada.y;
 
-    case 2:
-        tabuleiro.posicoes[x][y] = PECA_2;
-        break;
+    if (jogada.sucesso) {
+        if (EhPosicaoValidaTabuleiro(x, y) && 
+            !EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, x, y, jogador.id)) {
+            printf("Jogada [%d,%d]!\n", x, y);
+            tabuleiro = MarcaPosicaoTabuleiro(tabuleiro, jogador.id, x, y);
+            return tabuleiro;
+
+        } else if (EhPosicaoValidaTabuleiro(x, y) && 
+                   EstaMarcadaPosicaoPecaTabuleiro(tabuleiro, x, y, jogador.id)) {
+                printf("Posicao invalida (OCUPADA - [%d,%d] )!\n", x, y);
+                tabuleiro = JogaJogador(jogador, tabuleiro);
+   
+        } else {
+            printf("Posicao invalida (FORA DO TABULEIRO - [%d,%d] )!\n", x, y);
+            tabuleiro = JogaJogador(jogador, tabuleiro);
+        }
     }
+
     return tabuleiro;
 }
 
@@ -34,47 +42,47 @@ int VenceuJogador(tJogador jogador, tTabuleiro tabuleiro) {
     switch (jogador.id) {
     case 1:
         for (int i = 0; i <= 2; i++) {
-            if ( (tabuleiro.posicoes[i][0] == PE_X && // horizontal
-                  tabuleiro.posicoes[i][1] == PE_X && 
-                  tabuleiro.posicoes[i][2] == PE_X) ||
+            if ( (tabuleiro.posicoes[i][0] == PECA_DO_1 && // horizontal
+                  tabuleiro.posicoes[i][1] == PECA_DO_1 && 
+                  tabuleiro.posicoes[i][2] == PECA_DO_1) ||
 
-                 (tabuleiro.posicoes[0][i] == PE_X && // vertical
-                  tabuleiro.posicoes[1][i] == PE_X && 
-                  tabuleiro.posicoes[2][i] == PE_X) ) {
+                 (tabuleiro.posicoes[0][i] == PECA_DO_1 && // vertical
+                  tabuleiro.posicoes[1][i] == PECA_DO_1 && 
+                  tabuleiro.posicoes[2][i] == PECA_DO_1) ) {
                 return 1;
             }
         }
 
-        if (tabuleiro.posicoes[0][0] == PE_X && // diagonal
-                tabuleiro.posicoes[1][1] == PE_X && 
-                tabuleiro.posicoes[2][2] == PE_X ||
+        if (tabuleiro.posicoes[0][0] == PECA_DO_1 && // diagonal
+                tabuleiro.posicoes[1][1] == PECA_DO_1 && 
+                tabuleiro.posicoes[2][2] == PECA_DO_1 ||
             
-                tabuleiro.posicoes[0][2] == PE_X && 
-                tabuleiro.posicoes[1][1] == PE_X && 
-                tabuleiro.posicoes[2][0] == PE_X) {
+                tabuleiro.posicoes[0][2] == PECA_DO_1 && 
+                tabuleiro.posicoes[1][1] == PECA_DO_1 && 
+                tabuleiro.posicoes[2][0] == PECA_DO_1) {
                 return 1;
             }
         break;
 
     case 2:
         for (int i = 0; i <= 2; i++) {
-            if ( (tabuleiro.posicoes[i][0] == PE_0 && // horizontal
-                  tabuleiro.posicoes[i][1] == PE_0 && 
-                  tabuleiro.posicoes[i][2] == PE_0) ||
+            if ( (tabuleiro.posicoes[i][0] == PECA_DO_2 && // horizontal
+                  tabuleiro.posicoes[i][1] == PECA_DO_2 && 
+                  tabuleiro.posicoes[i][2] == PECA_DO_2) ||
 
-                 (tabuleiro.posicoes[0][i] == PE_0 && // vertical
-                  tabuleiro.posicoes[1][i] == PE_0 && 
-                  tabuleiro.posicoes[2][i] == PE_0) ) {
+                 (tabuleiro.posicoes[0][i] == PECA_DO_2 && // vertical
+                  tabuleiro.posicoes[1][i] == PECA_DO_2 && 
+                  tabuleiro.posicoes[2][i] == PECA_DO_2) ) {
                 return 1;
             }
         }
-        if (tabuleiro.posicoes[0][0] == PE_0 && // diagonal
-                tabuleiro.posicoes[1][1] == PE_0 && 
-                tabuleiro.posicoes[2][2] == PE_0 ||
+        if (tabuleiro.posicoes[0][0] == PECA_DO_2 && // diagonal
+                tabuleiro.posicoes[1][1] == PECA_DO_2 && 
+                tabuleiro.posicoes[2][2] == PECA_DO_2 ||
             
-                tabuleiro.posicoes[0][2] == PE_0 && 
-                tabuleiro.posicoes[1][1] == PE_0 && 
-                tabuleiro.posicoes[2][0] == PE_0) {
+                tabuleiro.posicoes[0][2] == PECA_DO_2 && 
+                tabuleiro.posicoes[1][1] == PECA_DO_2 && 
+                tabuleiro.posicoes[2][0] == PECA_DO_2) {
                 return 1;
         }
         break;

@@ -1,0 +1,35 @@
+Resultados/Raony/completo/filme.c: In function ‘lerFilme’:
+Resultados/Raony/completo/filme.c:16:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   16 |     scanf("%d,%[^,],%d,%d", &filme.codigo, filme.nome, &filme.valor, &filme.qtdEstoque);
+      |     ^~~~~
+Resultados/Raony/completo/filme.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include <string.h>
+  +++ |+#include <stdio.h>
+    3 | 
+Resultados/Raony/completo/filme.c:16:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   16 |     scanf("%d,%[^,],%d,%d", &filme.codigo, filme.nome, &filme.valor, &filme.qtdEstoque);
+      |     ^~~~~
+Resultados/Raony/completo/filme.c:16:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Resultados/Raony/completo/filme.c: In function ‘imprimirNomeFilme’:
+Resultados/Raony/completo/filme.c:26:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   26 |     printf("%s", filme.nome);
+      |     ^~~~~~
+Resultados/Raony/completo/filme.c:26:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/Raony/completo/filme.c:26:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+Resultados/Raony/completo/filme.c:26:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/Raony/completo/locadora.c: In function ‘lerCadastroLocadora’:
+Resultados/Raony/completo/locadora.c:29:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+   29 |     scanf("%d,%[^,],%d,%d", &codigo, nome, &valor, &quantidade);
+      |     ^~~~~
+Resultados/Raony/completo/locadora.c:3:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    2 | #include "locadora.h"
+  +++ |+#include <stdio.h>
+    3 | 
+Resultados/Raony/completo/locadora.c:29:5: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+   29 |     scanf("%d,%[^,],%d,%d", &codigo, nome, &valor, &quantidade);
+      |     ^~~~~
+Resultados/Raony/completo/locadora.c:29:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Resultados/Raony/completo/locadora.c: In function ‘alugarFilmesLocadora’:
+Resultados/Raony/completo/locadora.c:43:1: warning: control reaches end of non-void function [-Wreturn-type]
+   43 | }
+      | ^
