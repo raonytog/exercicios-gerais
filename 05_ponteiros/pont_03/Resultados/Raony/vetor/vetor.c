@@ -11,6 +11,7 @@ void ImprimeDadosDoVetor(int * n, int tam) {
      for (int i = 0; i < tam; i++) {
         printf("%d ", n[i]);
     }
+    printf("\n");
 }
 
 /**
@@ -23,8 +24,9 @@ void ImprimeDadosDoVetor(int * n, int tam) {
  * @param paraTrocar Ponteiro para a variável que armazenará o índice do menor valor encontrado.
  */
 void TrocaSeAcharMenor(int * vet, int tam, int * paraTrocar) {
-    if (vet[tam] > paraTrocar[tam+1]) {
-        int troca = *paraTrocar;
+    int troca = 0;
+    if (*vet > *paraTrocar) {
+        troca = *paraTrocar;
         *paraTrocar = *vet;
         *vet = troca;
     }
@@ -39,7 +41,7 @@ void TrocaSeAcharMenor(int * vet, int tam, int * paraTrocar) {
  * @param tam Tamanho do vetor.
  */
 void OrdeneCrescente(int * vet, int tam) {
-    for (int i = 0; i < tam; i++) {
-        TrocaSeAcharMenor(*vet, i, *vet++);
-    }
+    for (int i = 0; i < tam-1; i++) 
+        for (int j = i+1; j < tam; j++) 
+            TrocaSeAcharMenor(&vet[i], i, &vet[j]);
 }
