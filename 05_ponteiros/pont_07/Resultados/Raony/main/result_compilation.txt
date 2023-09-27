@@ -1,0 +1,4 @@
+Resultados/Raony/main/evento.c: In function ‘cadastrarEvento’:
+Resultados/Raony/main/evento.c:15:5: warning: value computed is not used [-Wunused-value]
+   15 |     *numEventos++;
+      |     ^~~~~~~~~~~~~
