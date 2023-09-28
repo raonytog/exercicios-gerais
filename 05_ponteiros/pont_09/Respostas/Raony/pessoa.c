@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "pessoa.h"
 #include <string.h>
+#include "pessoa.h"
 
 /**
  * @brief Cria uma nova pessoa e inicializa os ponteiros.
@@ -9,10 +9,10 @@
  */
 tPessoa CriaPessoa() {
     tPessoa pessoa;
-    strcpy(pessoa.mae, "NAO INFORMADO");
-    strcpy(pessoa.pai, "NAO INFORMADO");
-    strcpy(pessoa.nome, "Raony");
-    // LePessoa(&pessoa);
+    char frase[20] = "NAO INFORMADO";
+    strcpy(pessoa.mae, &frase);
+    strcpy(pessoa.pai, &frase);
+    LePessoa(&pessoa);
     return pessoa;
 }
 
@@ -22,7 +22,7 @@ tPessoa CriaPessoa() {
  * @param pessoa Ponteiro para a pessoa a ser lida.
  */
 void LePessoa(tPessoa *pessoa) {
-    scanf("%100[^\n]", pessoa->nome);
+    scanf("%100[^\n]", &pessoa->nome);
 }
 
 /**

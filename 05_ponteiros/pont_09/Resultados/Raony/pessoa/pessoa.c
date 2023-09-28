@@ -12,7 +12,7 @@ tPessoa CriaPessoa() {
     strcpy(pessoa.mae, "NAO INFORMADO");
     strcpy(pessoa.pai, "NAO INFORMADO");
     strcpy(pessoa.nome, "Raony");
-    // LePessoa(&pessoa);
+    LePessoa(&pessoa);
     return pessoa;
 }
 
