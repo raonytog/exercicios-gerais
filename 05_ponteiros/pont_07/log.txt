@@ -1,4 +1,3 @@
-Ignorando o Valgrind
 Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
  - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
 #######################################
@@ -68,46 +67,88 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta evento / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta evento / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta evento / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta evento / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta evento / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta evento / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta evento / Caso 7:
+ - Arquivo de output gerado: Resultados/Raony/evento/Casos/7/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 7:
+ - Arquivo de output gerado: Resultados/Raony/main/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 5:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 6:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
  - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 7:
+ - Arquivo de output gerado: Resultados/Raony/completo/Casos/7/result_valgrind.txt.
+ - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
  - Resultado para o saida.txt: Ok!
 
 #######################################
@@ -120,11 +161,14 @@ Nome 0: Raony
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
  - Resultados Corretos evento: 7 de 7 / Nota 10.00
+ - Valgrinds Corretos evento: 5 de 7 / Nota 7.14
  - Resultados Corretos main: 7 de 7 / Nota 10.00
+ - Valgrinds Corretos main: 7 de 7 / Nota 10.00
  - Resultados Corretos completo: 7 de 7 / Nota 10.00
- - Soma das notas do Raony: 60.000
- - Campos Considerados: 6
- - Média do Raony: 10.00
+ - Valgrinds Corretos completo: 5 de 7 / Nota 7.14
+ - Soma das notas do Raony: 84.280
+ - Campos Considerados: 9
+ - Média do Raony: 9.36
 
 ----------------------------------------------------------------------------
 

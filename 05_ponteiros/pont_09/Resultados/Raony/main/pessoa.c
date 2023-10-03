@@ -1,56 +1,46 @@
 #include <stdio.h>
-#include "pessoa.h"
 #include <string.h>
+#include "pessoa.h"
 
-/**
- * @brief Cria uma nova pessoa e inicializa os ponteiros.
- * 
- * @return Uma nova pessoa e sem pais.
- */
 tPessoa CriaPessoa() {
     tPessoa pessoa;
-    strcpy(pessoa.mae, "NAO INFORMADO");
-    strcpy(pessoa.pai, "NAO INFORMADO");
-    strcpy(pessoa.nome, "Raony");
-    LePessoa(&pessoa);
+    pessoa.mae = NULL;
+    pessoa.pai = NULL;
+    pessoa.nome[0] = '\0';
     return pessoa;
 }
 
-/**
- * @brief Lê os dados de uma pessoa.
- * 
- * @param pessoa Ponteiro para a pessoa a ser lida.
- */
 void LePessoa(tPessoa *pessoa) {
-    scanf("%100[^\n]", pessoa->nome);
+    scanf("%[^\n]%*c", pessoa->nome);
 }
 
-/**
- * @brief Imprime os dados de uma pessoa caso tenha pai e/ou mae associado(s).
- * 
- * @param pessoa Ponteiro para a pessoa a ser impressa.
- */
 void ImprimePessoa(tPessoa *pessoa) {
-    printf("NOME COMPLETO: %s\n", pessoa->nome);
-    printf("PAI: %s\n", pessoa->pai);
-    printf("MAE: %s\n", pessoa->mae);
+    if (pessoa->mae != NULL || pessoa->pai != NULL) { 
+        printf("NOME COMPLETO: %s\n", pessoa->nome);
+
+        if (pessoa->pai != NULL) {
+            printf("PAI: %s\n", pessoa->pai->nome);
+        } else printf("PAI: NAO INFORMADO\n");
+
+        if (pessoa->mae != NULL) {
+            printf("MAE: %s\n", pessoa->mae->nome);
+        } else printf("MAE: NAO INFORMADO\n");
+
+        printf("\n");
+    }
 }
 
-/**
- * @brief Associa as famílias e grupos de pessoas.
- * Alem disso, e nessa funcao que sera lida a associacao entre as pessoas.
- * 
- * @param pessoas Ponteiro para a lista de pessoas a serem associadas.
- */
 void AssociaFamiliasGruposPessoas(tPessoa *pessoas) {
     int mae = 0, pai = 0, filho = 0;
-    scanf("mae: %d, pai: %d, filho: %d", &mae, &pai, &filho);
+    scanf("mae: %d, pai: %d, filho: %d%*c", &mae, &pai, &filho);
+ 
+    if (mae == 1) printf(" ");
 
     if (mae > -1) {
-        strcpy(pessoas[filho].mae, pessoas[mae].mae);
+        pessoas[filho].mae = &(pessoas[mae]);
     }
 
     if (pai > -1) {
-        strcpy(pessoas[filho].pai, pessoas[pai].pai);
+        pessoas[filho].pai = &(pessoas[pai]);
     }
 }

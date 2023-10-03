@@ -1,2 +1,2 @@
 Test Case: Resultados/Raony/main/Casos/1
-Valgrind result: allocs: 1 frees: 0 errors: 2 contexts: 2
+Valgrind result: allocs: 1 frees: 1 errors: 5 contexts: 1
