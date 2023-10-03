@@ -2,22 +2,17 @@
 #include "pessoa.h"
 
 int main () {
-    int numPessoas = 0, i = 0, numAlteracoes = 0;
-    scanf("%d%*c", &numPessoas);
-    tPessoa pessoas[numPessoas], pessoaTemp;
+    int numPessoas = 0, i = 0;
+    scanf("%d", &numPessoas);
+    tPessoa pessoas[numPessoas];
 
     // le pessoas
     for (i = 0; i < numPessoas; i++) {
-        pessoaTemp = CriaPessoa();
-        pessoas[i] = pessoaTemp;
-        LePessoa(&pessoas[i]);
+        pessoas[i] = CriaPessoa();
+        LePessoa(&(pessoas[i]));
     }
 
-    // junta familias
-    scanf("%d%*c", &numAlteracoes);
-    for (i = 0; i < numAlteracoes; i++) {
-        AssociaFamiliasGruposPessoas(&(pessoas[i]));
-    }
+    AssociaFamiliasGruposPessoas(pessoas);
 
     // imprime quem n é orfao
     for (i = 0; i < numPessoas; i++) {

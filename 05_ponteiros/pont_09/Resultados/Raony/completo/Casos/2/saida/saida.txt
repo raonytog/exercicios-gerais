@@ -1,12 +1,4 @@
-NOME COMPLETO: Sofia Santos
-PAI: Joao Silva
-MAE: Luiz Rodrigues
-
-NOME COMPLETO: Rafael Pereira
-PAI: Sofia Santos
-MAE: Pedro Santos
-
-NOME COMPLETO: Isabela Oliveira
-PAI: 
-MAE: Sofia Costa
+NOME COMPLETO: Lucas Pereira
+PAI: Lucas Pereira
+MAE: Lucas Pereira
 

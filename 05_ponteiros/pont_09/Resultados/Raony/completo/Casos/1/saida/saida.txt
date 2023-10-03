@@ -1,16 +1,4 @@
-NOME COMPLETO: Pedro Souza
-PAI: 6’
-MAE: NAO INFORMADO
-
-NOME COMPLETO: Gabriel Lima
-PAI: NAO INFORMADO
-MAE: Rafael Costa
-
-NOME COMPLETO: Rafael Costa
-PAI: Gabriel Lima
-MAE: Mariana Rodrigues
-
-NOME COMPLETO: Felipe Oliveira
-PAI: Ana Oliveira
-MAE: Lucas Pereira
+NOME COMPLETO: Maria Silva
+PAI: Maria Silva
+MAE: Maria Silva
 

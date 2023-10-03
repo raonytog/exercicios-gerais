@@ -11,36 +11,41 @@ tPessoa CriaPessoa() {
 }
 
 void LePessoa(tPessoa *pessoa) {
-    scanf("%[^\n]%*c", pessoa->nome);
+    scanf(" %[^\n]", pessoa->nome);
 }
 
 void ImprimePessoa(tPessoa *pessoa) {
     if (pessoa->mae != NULL || pessoa->pai != NULL) { 
+        
         printf("NOME COMPLETO: %s\n", pessoa->nome);
 
+        printf("PAI: ");
         if (pessoa->pai != NULL) {
-            printf("PAI: %s\n", pessoa->pai->nome);
-        } else printf("PAI: NAO INFORMADO\n");
+            printf("%s\n", pessoa->pai->nome);
+        } else printf("NAO INFORMADO\n");
 
+        printf("MAE: ");
         if (pessoa->mae != NULL) {
-            printf("MAE: %s\n", pessoa->mae->nome);
-        } else printf("MAE: NAO INFORMADO\n");
+            printf("%s\n", pessoa->mae->nome);
+        } else printf("NAO INFORMADO\n");
 
         printf("\n");
     }
 }
 
 void AssociaFamiliasGruposPessoas(tPessoa *pessoas) {
-    int mae = 0, pai = 0, filho = 0;
-    scanf("mae: %d, pai: %d, filho: %d%*c", &mae, &pai, &filho);
- 
-    if (mae == 1) printf(" ");
+    int mae = 0, pai = 0, filho = 0, qtdAssociacoes = 0;
+    scanf("%d", &qtdAssociacoes);
 
-    if (mae > -1) {
-        pessoas[filho].mae = &(pessoas[mae]);
-    }
+    for (int i = 0; i < qtdAssociacoes; i++) {
+        scanf("mae: %d, pai: %d, filho: %d", &mae, &pai, &filho);
 
-    if (pai > -1) {
-        pessoas[filho].pai = &(pessoas[pai]);
+        if (mae >= 0) {
+            pessoas[filho].mae = &(pessoas[mae]);
+        }
+
+        if (pai >= 0) {
+            pessoas[filho].pai = &(pessoas[pai]);
+        }
     }
 }
