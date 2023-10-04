@@ -14,9 +14,14 @@ void LePessoa(tPessoa *pessoa) {
     scanf("%[^\n]\n", pessoa->nome);
 }
 
+
+int VerificaSeTemPaisPessoa(tPessoa *pessoa) {
+    if (pessoa->mae != NULL || pessoa->pai != NULL) return 1;
+    return 0;
+}
+
 void ImprimePessoa(tPessoa *pessoa) {
-    if (pessoa->mae != NULL || pessoa->pai != NULL) { 
-        
+    if (VerificaSeTemPaisPessoa(pessoa)) {
         printf("NOME COMPLETO: %s\n", pessoa->nome);
 
         printf("PAI: ");
