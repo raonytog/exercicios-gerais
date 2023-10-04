@@ -1,6 +1,0 @@
-/usr/bin/ld: Resultados/Raony/.vscode/pessoa/main.o: in function `main':
-main.c:(.text+0x17d): undefined reference to `CriaPessoa'
-/usr/bin/ld: main.c:(.text+0x250): undefined reference to `LePessoa'
-/usr/bin/ld: main.c:(.text+0x278): undefined reference to `AssociaFamiliasGruposPessoas'
-/usr/bin/ld: main.c:(.text+0x2ad): undefined reference to `ImprimePessoa'
-collect2: error: ld returned 1 exit status

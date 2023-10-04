@@ -11,7 +11,7 @@ tPessoa CriaPessoa() {
 }
 
 void LePessoa(tPessoa *pessoa) {
-    scanf(" %[^\n]", pessoa->nome);
+    scanf("%[^\n]\n", pessoa->nome);
 }
 
 void ImprimePessoa(tPessoa *pessoa) {
@@ -35,17 +35,17 @@ void ImprimePessoa(tPessoa *pessoa) {
 
 void AssociaFamiliasGruposPessoas(tPessoa *pessoas) {
     int mae = 0, pai = 0, filho = 0, qtdAssociacoes = 0;
-    scanf("%d", &qtdAssociacoes);
+    scanf("%d\n", &qtdAssociacoes);
 
     for (int i = 0; i < qtdAssociacoes; i++) {
-        scanf("mae: %d, pai: %d, filho: %d", &mae, &pai, &filho);
+        scanf("mae: %d, pai: %d, filho: %d%*c", &mae, &pai, &filho);
 
         if (mae >= 0) {
-            pessoas[filho].mae = &(pessoas[mae]);
+            pessoas[filho].mae = (pessoas + mae);
         }
 
         if (pai >= 0) {
-            pessoas[filho].pai = &(pessoas[pai]);
+            pessoas[filho].pai = (pessoas + pai);
         }
     }
 }

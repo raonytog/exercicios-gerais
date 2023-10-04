@@ -1,1 +1,0 @@
-valgrind: Resultados/Raony/.vscode/pessoa/prog: No such file or directory
