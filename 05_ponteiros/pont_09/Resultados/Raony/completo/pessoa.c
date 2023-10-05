@@ -14,9 +14,14 @@ void LePessoa(tPessoa *pessoa) {
     scanf("%[^\n]\n", pessoa->nome);
 }
 
+
+int VerificaSeTemPaisPessoa(tPessoa *pessoa) {
+    if (pessoa->mae != NULL || pessoa->pai != NULL) return 1;
+    return 0;
+}
+
 void ImprimePessoa(tPessoa *pessoa) {
-    if (pessoa->mae != NULL || pessoa->pai != NULL) { 
-        
+    if (VerificaSeTemPaisPessoa(pessoa)) {
         printf("NOME COMPLETO: %s\n", pessoa->nome);
 
         printf("PAI: ");
@@ -31,6 +36,8 @@ void ImprimePessoa(tPessoa *pessoa) {
 
         printf("\n");
     }
+
+    return;
 }
 
 void AssociaFamiliasGruposPessoas(tPessoa *pessoas) {
@@ -40,12 +47,12 @@ void AssociaFamiliasGruposPessoas(tPessoa *pessoas) {
     for (int i = 0; i < qtdAssociacoes; i++) {
         scanf("mae: %d, pai: %d, filho: %d%*c", &mae, &pai, &filho);
 
-        if (mae >= 0) {
-            pessoas[filho].mae = (pessoas + mae);
+        if (mae != -1) {
+            pessoas[filho].mae = &pessoas[mae];
         }
 
-        if (pai >= 0) {
-            pessoas[filho].pai = (pessoas + pai);
+        if (pai != -1) {
+            pessoas[filho].pai = &pessoas[pai];
         }
     }
 }
