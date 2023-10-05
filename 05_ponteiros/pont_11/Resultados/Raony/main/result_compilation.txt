@@ -1,0 +1,4 @@
+Resultados/Raony/main/main.c: In function ‘main’:
+Resultados/Raony/main/main.c:29:31: warning: unused variable ‘resultado’ [-Wunused-variable]
+   29 |     float num1 = 0, num2 = 0, resultado = 0;
+      |                               ^~~~~~~~~
