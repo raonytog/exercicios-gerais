@@ -3,7 +3,7 @@
 #include "vetor.h"
 
 int main(int argc, char *argv[]) {
-    int casos;
+    int casos = 0;
     scanf("%d", &casos);
 
     while (casos) {

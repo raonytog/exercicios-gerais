@@ -3,7 +3,7 @@
 
 int main () {
     int numPessoas = 0, i = 0;
-    scanf("%d\n", &numPessoas);
+    scanf("%d", &numPessoas);
     tPessoa pessoas[numPessoas];
 
     // le pessoas
