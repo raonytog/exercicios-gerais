@@ -11,7 +11,7 @@ tPessoa CriaPessoa() {
 }
 
 void LePessoa(tPessoa *pessoa) {
-    scanf("%[^\n]\n", pessoa->nome);
+    scanf("\n%[^\n]", pessoa->nome);
 }
 
 
