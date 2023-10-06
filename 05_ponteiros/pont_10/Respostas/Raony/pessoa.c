@@ -69,8 +69,8 @@ void AssociaFamiliasGruposPessoas(tPessoa *pessoas, int numPessoas) {
     for (i = 0; i < numPessoas - 1; i++) {
         for (j = i + 1; j < numPessoas; j++) {
             if (VerificaIrmaoPessoa(pessoas+i, pessoas+j)) {
-                pessoas[i].irmao = &pessoas[j];
-                pessoas[j].irmao = &pessoas[i];
+                (pessoas + i) ->irmao = &pessoas[j];
+                (pessoas + j) ->irmao = &pessoas[i];
             }
         }
     }
