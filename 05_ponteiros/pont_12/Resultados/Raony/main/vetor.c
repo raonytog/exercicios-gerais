@@ -12,11 +12,10 @@ void LeVetor(Vetor *vetor) {
 }
 
 int AplicarOperacaoVetor(Vetor *vetor, Operation op) {
-    int resultado = 0;
+    int resultado = vetor->elementos[0];
 
     for (int i = 0; i < vetor->tamanhoUtilizado-1; i++) {
-        resultado += op(vetor->elementos[i], 1);
-        resultado -1;
+        resultado += op(vetor->elementos[i+1], resultado);
     }
 
     return resultado;

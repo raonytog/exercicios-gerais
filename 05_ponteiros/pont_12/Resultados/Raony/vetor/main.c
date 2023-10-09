@@ -14,7 +14,7 @@ int main () {
     prod = AplicarOperacaoVetor(&vetor, produto);
 
     printf("Soma: %d\n", sum);
-    printf("Produto: %d\n", prod);
+    printf("Produto: %d\n", product);
 
     return 0;
 }
