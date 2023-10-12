@@ -1,2 +1,2 @@
-Soma: 6542
-Produto: 400308480
+Soma: 161
+Produto: 98542080

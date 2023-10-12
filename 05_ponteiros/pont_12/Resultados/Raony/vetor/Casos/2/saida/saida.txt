@@ -1,2 +1,2 @@
-Soma: 57
-Produto: 360
+Soma: 15
+Produto: 120

@@ -1,2 +1,2 @@
-Soma: 2036
-Produto: 19958400
+Soma: 55
+Produto: 3628800

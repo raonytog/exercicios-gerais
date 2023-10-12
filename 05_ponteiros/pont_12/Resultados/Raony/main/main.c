@@ -6,7 +6,7 @@ int soma (int a, int b);
 int produto (int a, int b);
 
 int main () {
-    Vetor * vetor = NULL;
+    Vetor vetor;
     int sum = 0, prod = 0;
     LeVetor(&vetor);
 
@@ -14,7 +14,7 @@ int main () {
     prod = AplicarOperacaoVetor(&vetor, produto);
 
     printf("Soma: %d\n", sum);
-    printf("Produto: %d\n", product);
+    printf("Produto: %d\n", prod);
 
     return 0;
 }

@@ -6,7 +6,7 @@ int soma (int a, int b);
 int produto (int a, int b);
 
 int main () {
-    Vetor * vetor = NULL;
+    Vetor vetor;
     int sum = 0, prod = 0;
     LeVetor(&vetor);
 
