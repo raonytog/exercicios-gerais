@@ -8,6 +8,7 @@ int main () {
 
     for (i = 0; i < numAlunos; i++) {
         aluno[i] = CriaAluno();
+        LeAluno(aluno[i]);
 
         // salva na estrutura de alunos aprovados os que forem
         if (VerificaAprovacao(aluno[i])) {

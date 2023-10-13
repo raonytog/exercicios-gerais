@@ -56,7 +56,7 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta aluno / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/aluno/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 5, frees: 0, errors: 1.
+ - Valgrind: Ok! allocs: 5, frees: 5, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta aluno / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/aluno/Casos/2/result_valgrind.txt.
@@ -64,20 +64,20 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o saida.txt: Ok!
  - Pasta aluno / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/aluno/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 11, frees: 0, errors: 1.
+ - Valgrind: Ok! allocs: 11, frees: 11, errors: 0.
  - Resultado para o saida.txt: Incorreto!
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/1/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 5, frees: 1, errors: 1.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 10, frees: 8, errors: 1.
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 1, errors: 1.
+ - Valgrind: Incorreto! allocs: 3, frees: 1, errors: 1.
  - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/Raony/main/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 11, frees: 1, errors: 1.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 22, frees: 10, errors: 1.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Raony/completo/Casos/1/result_valgrind.txt.
  - Valgrind: Incorreto! allocs: 5, frees: 1, errors: 1.
@@ -101,14 +101,14 @@ Nome 0: Raony
  - Compilações Corretas: 3 de 3 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
  - Resultados Corretos aluno: 1 de 3 / Nota 3.33
- - Valgrinds Corretos aluno: 1 de 3 / Nota 3.33
- - Resultados Corretos main: 1 de 3 / Nota 3.33
+ - Valgrinds Corretos aluno: 3 de 3 / Nota 10.00
+ - Resultados Corretos main: 3 de 3 / Nota 10.00
  - Valgrinds Corretos main: 0 de 3 / Nota 0.00
  - Resultados Corretos completo: 1 de 3 / Nota 3.33
  - Valgrinds Corretos completo: 0 de 3 / Nota 0.00
- - Soma das notas do Raony: 43.320
+ - Soma das notas do Raony: 56.660
  - Campos Considerados: 9
- - Média do Raony: 4.81
+ - Média do Raony: 6.29
 
 ----------------------------------------------------------------------------
 
