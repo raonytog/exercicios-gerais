@@ -1,0 +1,7 @@
+aluno.c: In function ‘LeAluno’:
+aluno.c:37:15: warning: format ‘%[^
+   ’ expects argument of type ‘char *’, but argument 2 has type ‘char **’ [-Wformat=]
+   37 |     scanf("%[^\n]%*c", &aluno->nome);
+      |            ~~~^~       ~~~~~~~~~~~~
+      |               |        |
+      |               char *   char **
