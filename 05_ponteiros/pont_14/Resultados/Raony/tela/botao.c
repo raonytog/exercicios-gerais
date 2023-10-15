@@ -1,15 +1,14 @@
 #include "botao.h"
-#include <stdio.h>
 #include <string.h>
 
 void SetarTexto(Botao *b, char *novoTexto) {
     if (strlen(novoTexto) > MAX_TAM_TEXTO) return;
-    else strcpy(b->texto, novoTexto);
+    strcpy(b->texto, novoTexto);
 }
 
 void SetarTamFonte(Botao *b, int novoTamFonte) {
     if (novoTamFonte <= 0) return;
-    else b->tamFonte = novoTamFonte;
+    b->tamFonte = novoTamFonte;
 }
 
 void SetarCor(Botao *b, char *novaCor) {
