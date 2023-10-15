@@ -1,0 +1,10 @@
+locadora.c: In function ‘LerAluguelLocadora’:
+locadora.c:64:20: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   64 |     while (scanf("%d", codigos[i]) == 1) {
+      |                   ~^   ~~~~~~~~~~
+      |                    |          |
+      |                    int *      int
+locadora.c: In function ‘OrdenarFilmesLocadora’:
+locadora.c:98:12: warning: unused variable ‘filmeTemp’ [-Wunused-variable]
+   98 |     tFilme filmeTemp;
+      |            ^~~~~~~~~
