@@ -1,0 +1,1 @@
+valgrind: Resultados/Raony/banco/prog: No such file or directory
