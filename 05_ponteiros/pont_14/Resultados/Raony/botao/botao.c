@@ -1,14 +1,15 @@
 #include "botao.h"
+#include <stdio.h>
 #include <string.h>
 
 void SetarTexto(Botao *b, char *novoTexto) {
     if (strlen(novoTexto) > MAX_TAM_TEXTO) return;
-    strcpy(b->texto, novoTexto);
+    else strcpy(b->texto, novoTexto);
 }
 
 void SetarTamFonte(Botao *b, int novoTamFonte) {
     if (novoTamFonte <= 0) return;
-    b->tamFonte = novoTamFonte;
+    else b->tamFonte = novoTamFonte;
 }
 
 void SetarCor(Botao *b, char *novaCor) {
@@ -20,12 +21,13 @@ void SetarTipo(Botao *b, int novoTipo) {
 }
 
 Botao CriarBotao(char *texto, int tamFonte, char *cor, int tipo, void (*executa)(void)) {
-    Botao *buttom;
+    Botao buttom;
     SetarTexto(&buttom, texto);
     SetarTamFonte(&buttom, tamFonte);
     SetarCor(&buttom, cor);
     SetarTipo(&buttom, tipo);
-    buttom->executa = executa;
+    buttom.executa = executa;
+    return buttom;
 }
 
 /**

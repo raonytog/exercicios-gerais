@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 Tela CriarTela(int altura, int largura) {
-    Tela * tela;
-    tela->altura = altura;
-    tela->largura = altura;
-    tela->qntBotoes = 0;
-    return *tela;
+    Tela tela;
+    tela.altura = altura;
+    tela.largura = largura;
+    tela.qntBotoes = 0;
+    return tela;
 }
 
 void RegistraBotaoTela(Tela *t, Botao b) {

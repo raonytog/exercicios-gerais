@@ -11,9 +11,9 @@
 
 -------------
 - Botao [2]:
-(Salvar | FF0000 | 10 | 2)
+(Opcoes | FF0000 | 10 | 2)
 -------------
 
 ##################
 - Escolha sua acao: - Executando o botao com evento de click
-- Botao de SALVAR dados ativado!
+- Botao de EXCLUIR dados ativado!

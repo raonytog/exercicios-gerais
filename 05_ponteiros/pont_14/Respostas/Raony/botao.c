@@ -21,12 +21,13 @@ void SetarTipo(Botao *b, int novoTipo) {
 }
 
 Botao CriarBotao(char *texto, int tamFonte, char *cor, int tipo, void (*executa)(void)) {
-    Botao *buttom;
+    Botao buttom;
     SetarTexto(&buttom, texto);
     SetarTamFonte(&buttom, tamFonte);
     SetarCor(&buttom, cor);
     SetarTipo(&buttom, tipo);
-    buttom->executa = executa;
+    buttom.executa = executa;
+    return buttom;
 }
 
 /**
@@ -49,6 +50,7 @@ void ExecutaBotao(Botao b) {
             printf("- Executando o botao com evento de hover\n");
             break;
     }
+    
     b.executa();
 }
 

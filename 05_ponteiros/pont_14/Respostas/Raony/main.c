@@ -13,20 +13,17 @@ void buttom_2 () {
     printf("- Botao de OPCOES ativado!\n");
 }
 
-
-
 int main () {
-    int indiceBotao = 0;
     Tela telinha = CriarTela(400, 200);
     Botao botaozinho;
 
     botaozinho = CriarBotao("Salvar", 12, "FFF", 1, buttom_0);
     RegistraBotaoTela(&telinha, botaozinho);
 
-    botaozinho = CriarBotao("Excluir", 18, "000", 1, buttom_0);
+    botaozinho = CriarBotao("Excluir", 18, "000", 1, buttom_1);
     RegistraBotaoTela(&telinha, botaozinho);
 
-    botaozinho = CriarBotao("Salvar", 10, "FF0000", 2, buttom_0);
+    botaozinho = CriarBotao("Opcoes", 10, "FF0000", 2, buttom_2);
     RegistraBotaoTela(&telinha, botaozinho);
 
     DesenhaTela(telinha);
