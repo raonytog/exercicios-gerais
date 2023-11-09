@@ -21,6 +21,7 @@ tAluno* CriaAluno() {
 }
 
 void ApagaAluno(tAluno *aluno) {
+    if (aluno == NULL) return;
     free(aluno->nome);
     free(aluno);
 }
@@ -28,11 +29,12 @@ void ApagaAluno(tAluno *aluno) {
 void LeAluno(tAluno *aluno) {
     char aux[50];
     scanf("%s%*c", aux);
-    aluno->nome = realloc(aluno->nome, strlen (aux) * sizeof(char));
+    aluno->nome = realloc(aluno->nome, (strlen(aux)+1) * sizeof(char));
     strcpy(aluno->nome, aux);
 
-    scanf("%d%*c", aluno->matricula);
+    scanf("%d%*c", &aluno->matricula);
     scanf("%d %d %d%*c", &aluno->n1, &aluno->n2, &aluno->n3);
+    return;
 }
 
 int ComparaMatricula(tAluno* aluno1, tAluno* aluno2) {
@@ -52,5 +54,5 @@ int VerificaAprovacao(tAluno* aluno) {
 }
 
 void ImprimeAluno(tAluno* aluno) {
-    printf("%s", aluno->nome);
+    printf("%s\n", aluno->nome);
 }
