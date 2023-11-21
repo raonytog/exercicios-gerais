@@ -1,0 +1,2 @@
+Test Case: Resultados/Raony/vector/Casos/3
+Valgrind result: allocs: 6 frees: 0 errors: 1 contexts: 1

@@ -1,0 +1,5 @@
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: Resultados/Raony/completo/produto.o: in function `LeProduto':
+produto.c:(.text+0x12a): undefined reference to `stlens'
+collect2: error: ld returned 1 exit status

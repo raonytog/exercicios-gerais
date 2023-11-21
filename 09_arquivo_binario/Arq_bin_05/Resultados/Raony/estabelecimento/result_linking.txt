@@ -1,0 +1,6 @@
+/usr/bin/ld: Resultados/Raony/estabelecimento/main.o: in function `main':
+main.c:(.text+0x12): undefined reference to `CriaEstabelecimento'
+/usr/bin/ld: main.c:(.text+0x22): undefined reference to `LeEstabelecimento'
+/usr/bin/ld: main.c:(.text+0x2e): undefined reference to `ImprimeProdutosEmFaltaEstabelecimento'
+/usr/bin/ld: main.c:(.text+0x3a): undefined reference to `DestroiEstabelecimento'
+collect2: error: ld returned 1 exit status

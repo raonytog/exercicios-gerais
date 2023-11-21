@@ -1,0 +1,10 @@
+Resultados/Raony/estabelecimento/estabelecimento.c:16:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘*’ token
+   16 | tEstabelecimento *CriaEstabelecimento();
+      |                  ^
+cc1: fatal error: Resultados/Raony/estabelecimento/main.c: No such file or directory
+compilation terminated.
+Resultados/Raony/estabelecimento/produto.c: In function ‘LeProduto’:
+Resultados/Raony/estabelecimento/produto.c:36:19: warning: implicit declaration of function ‘stlens’; did you mean ‘strlen’? [-Wimplicit-function-declaration]
+   36 |     fread(&name, (stlens(name)+1) * sizeof(name), 1, arquivo);
+      |                   ^~~~~~
+      |                   strlen
