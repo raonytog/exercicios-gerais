@@ -3,8 +3,6 @@
 #include <string.h>
 #include "aluno.h"
 
-typedef struct Aluno tAluno;
-
 struct Aluno {
     int matricula;
     char * nome;
