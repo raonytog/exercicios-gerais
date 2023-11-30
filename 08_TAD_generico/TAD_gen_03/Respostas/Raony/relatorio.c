@@ -38,11 +38,4 @@ void ImprimeRelatorio(Vector *alunos) {
     printf("Masculino: %.2f%\n", pctM);
     printf("Feminino: %.2f%\n", pctF);
     printf("Outro: %.2f%\n", pctO);
-
-    // Media das notas: 7.05
-    // Porcentagem de alunos aprovados: 75.00%
-    // Porcentagem de cada genero:
-    // Masculino: 25.00%
-    // Feminino: 25.00%
-    // Outro: 50.00%
 }
