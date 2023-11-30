@@ -3,12 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- * @brief Imprime o relatorio de uma coleção de alunos.
- * O relatorio deve possuir a media das notas, porcentagem de alunos aprovados e porcentagem de cada gênero.
- * 
- * @param alunos Ponteiro para o vetor de alunos.
-*/
 void ImprimeRelatorio(Vector *alunos) {
     int tamVet = VectorSize(alunos), genM = 0, genF = 0, genO = 0;
     float nota = 0, media = 0, qtdAlunoApv = 0, pctApvd = 0, pctM = 0, pctF = 0, pctO =0;

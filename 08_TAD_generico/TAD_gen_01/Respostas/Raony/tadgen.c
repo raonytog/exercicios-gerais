@@ -8,57 +8,54 @@ struct generic {
     Type type;
 };
 
-/**
- * @brief Cria uma estrutura genérica e dinâmica que pode armazenar tanto inteiros quanto floats
- *
- * @param type - Tipo do vetor genérico. Segue o Enum definido acima.
- * @param numElem A quantidade de elementos que serão armazenados no vetor
- *
- * @return O vetor genérico
- */
 tGeneric* CriaGenerico(Type type, int numElem) {
-    tGeneric * gen = malloc(numElem * sizeof(tGeneric));
+    tGeneric * gen = malloc(sizeof(tGeneric));
     gen->size = numElem;
     gen->type = type;
-    gen->data = NULL;
+
+    if (type == INT) gen->data = malloc(numElem * sizeof(int));
+    else if (type == FLOAT) gen->data = malloc(numElem * sizeof(float));
 
     return gen;
 }
 
-/**
- * @brief Destroi o vetor genérico (libera a memória alocada dinamicamente)
- *
- * @param gen - O vetor genérico que terá seu conteúdo liberado/destruído
- */
 void DestroiGenerico(tGeneric* gen) {
-
+    free(gen->data);
+    free(gen);
 }
 
-/**
- * @brief Lê o conteúdo do vetor genérico e salva no local adequado
- *
- * @param gen - O vetor genérico que terá seu conteúdo preenchido/lido
- */
 void LeGenerico(tGeneric* gen) {
-    for (int i = 0; i <)
+    printf("\nDigite o vetor:\n");
+    switch (gen->type) {
+        case FLOAT:
+            for (int i = 0; i < gen->size; i++) {
+                scanf("%f", (float *) gen->data + i*sizeof(float));
+                scanf("%*c");
+            }
+            break;
+
+        case INT:
+            for (int i = 0; i < gen->size; i++) {
+                scanf("%d", (int *) gen->data + i*sizeof(int));
+                scanf("%*c");
+            }
+            break;
+    }
 }
 
-/**
- * @brief Busca uma conta na agencia que possui um id específico
- *
- * @param gen - O vetor genérico que terá seu conteúdo impresso em tela
- */
 void ImprimeGenerico(tGeneric* gen) {
     switch (gen->type) {
-        case 0: //float
-            for (int i = 0; i < gen->size; i++)
-                printf("%.2f ", gen->data[i]);
+        case FLOAT:
+            for (int i = 0; i < gen->size; i++) {
+                printf("%.2f ", *((float *) gen->data + i*sizeof(float)));
+            }
             break;
 
-        case 1: //int     
-            for (int i = 0; i < gen->size; i++)
-                printf("%d ", gen->data[i]);
+        case INT:
+            for (int i = 0; i < gen->size; i++) {
+                printf("%d ", *((int *) gen->data + i*sizeof(int)) );
+            }
             break;
-    
     }
+    printf("\n");
 }
