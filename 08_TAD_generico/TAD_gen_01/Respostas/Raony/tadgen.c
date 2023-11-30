@@ -59,3 +59,4 @@ void ImprimeGenerico(tGeneric* gen) {
     }
     printf("\n");
 }
+
